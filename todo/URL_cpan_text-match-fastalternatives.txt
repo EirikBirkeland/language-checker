@@ -1,0 +1,1 @@
+http://search.cpan.org/~arc/Text-Match-FastAlternatives-1.05/lib/Text/Match/FastAlternatives.pm

@@ -1,0 +1,27 @@
+head	1.1;
+access;
+symbols;
+locks
+	eb:1.1; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.1
+date	2015.01.10.03.02.46;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.1
+log
+@vim
+@
+text
+@http://search.cpan.org/~arc/Text-Match-FastAlternatives-1.05/lib/Text/Match/FastAlternatives.pm
+@

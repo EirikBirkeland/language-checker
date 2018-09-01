@@ -1,0 +1,11 @@
+Consistency test:
+
+- Gather identical source segments. Upon finding identical ones, check whether their sources are all identical. If one source differs, display *all* segments side-by-side.
+
+- 
+
+Hash (
+"This is a sentence" => 2
+);
+
+

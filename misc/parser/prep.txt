@@ -1,0 +1,544 @@
+a
+á
+à la
+a.D.
+ad
+a. D
+AD
+aD
+a.D.
+ad
+aktenfor
+aktenfra
+aktenom
+akter
+akterinn
+akterover
+akterut
+allesteds
+allestedsfra
+allestedshen
+angående
+annensteds
+annenstedsfra
+annenstedshen
+annetstedsfra
+att.
+attende
+attmed
+attom
+attpå
+aust
+austa
+austafjells
+austafor
+austafra
+austenom
+austetter
+austfra
+austover
+austpå
+av
+av sted
+avsted
+babord
+bak
+bakafor
+bakenfor
+bakenfra
+bakenifra
+bakenom
+baketter
+bakfra
+baki
+bakom
+bakover
+bakpå
+bakut
+beint fram
+bent fram
+bent frem
+bl
+bl. a.
+bl a
+bl.a.
+blant
+bort
+bort imot
+bort mot
+bortafor
+borte
+bortefra
+bortenfor
+bortenom
+bortetter
+borti
+bortigjennom
+bortimot
+bortmed
+bortom
+bortover
+bortpå
+bortsett fra
+borttil
+bortunder
+bortved
+bygdimellom
+c.c.
+c/o
+contra
+de
+deriblant
+dit
+dit hen
+ditover
+dss.
+dss
+e
+e.
+efter
+efterpå
+eks
+eks.
+eksklusiv
+eksklusive
+ende fram
+ende frem
+endelangs
+enn
+ensteds
+etsteds
+etter
+ex
+f.
+-fjells
+for
+foran
+forbi
+forfra
+formedelst
+forover
+forut
+foruten
+fra
+fra barnsbein av
+fra barnsben av
+fram
+frametter
+framfor
+framføre
+frammafor
+framme
+frammenfor
+framom
+framover
+frampå
+frem
+fremad
+fremetter
+fremfor
+fremme
+fremmenfor
+fremom
+fremover
+frempå
+før
+føre
+gardimellom
+gatelangs
+gjennom
+glipp av
+grunnet
+hakk i hæl
+halvveges
+halvvegs
+has på
+heim
+heim att
+heimanfra
+heimefra
+heimetter
+heimom
+heimover
+hen
+henad
+henimot
+henne
+henover
+henved
+hinsides
+hisset
+hist
+hit
+hitafor
+hitenfor
+hitover
+hittil
+hjem
+hjemad
+hjemetter
+hjemme
+hjemmefra
+hjemom
+hjemover
+hjå
+hos
+husimellom
+hvor hen
+hvoriblant
+i
+i ferd med
+i kraft av
+i påvente av
+i stedet for
+iblant
+iflg.
+ifra
+ifølge
+igjennom
+ikring
+imellom
+imot
+inklusiv
+inklusive
+inn
+inn i
+inn til
+innad
+innadørs
+innafor
+innafra
+innalands
+innaskjærs
+innatt
+inne
+innefra
+innen
+innendørs
+innenfor
+innenfra
+innenifra
+innenlands
+innenskjærs
+innetter
+innfor
+inni
+inniblant
+innigjennom
+innimellom
+innmed
+innom
+innomhus
+innover
+innpå
+inntil
+innunder
+innved
+innåt
+istedenfor
+istf.
+istf
+kontra
+kring
+kringom
+landimellom
+landverts
+langs
+langsetter
+langsmed
+langt fra
+langt ifra
+langtfra
+langveges
+langveges fra
+langvegesfra
+langvegs
+langvegs fra
+langvegsfra
+langveis
+langveis fra
+langveisfra
+like til
+m
+m/
+m.
+mannemellom
+med
+med bibehold av
+med henblikk på
+medsols
+medstrøms
+mellom
+m. h. t.
+m.h.t.
+mht.
+midtfjords
+midtskips
+midtveges
+midtvegs
+midtveis
+m.o.t.
+m. o. t.
+mot
+ned
+ned fra
+ned i
+ned over
+ned på
+nedad
+nedafor
+nedafra
+nedatil
+nede
+nedefra
+nedenfor
+nedenfra
+nedenifra
+nedenom
+nedentil
+nedenunder
+nedetter
+nedi
+nedigjennom
+nedimot
+nedmed
+nedom
+nedover
+nedpå
+nedstrøms
+nedved
+nord
+nord om
+nordafjells
+nordafor
+nordafra
+nordaust
+nordenfjells
+nordenfor
+nordenfra
+nordenom
+nordetter
+nordfra
+nordi
+nordigjennom
+nordmed
+nordom
+nordost
+nordover
+nordpå
+nordvest
+nordøst
+nordøstover
+nærme
+om
+om bord
+ombord
+omfram
+omframt
+omkr
+omkr.
+omkring
+opp
+opp i
+opp imot
+opp mot
+opp på
+opp til
+oppe
+oppetter
+oppfor
+oppgjennom
+oppi
+oppigjennom
+oppimot
+oppmed
+oppom
+oppover
+opptil
+oppunder
+oppved
+oppå
+o.s.fr.
+o. s. fr.
+osfr.
+osfr
+ost
+ovabords
+ovafor
+ovafra
+ovapå
+ovatil
+ovenbords
+ovenfor
+ovenfra
+ovenom
+ovenpå
+oventil
+over
+overbord
+overfor
+per
+pga
+p. g. a.
+pga.
+p.g.a.
+post
+poste restante
+p r
+p.r.
+p. r.
+pr.
+pr
+pro
+pro et contra
+på
+på vegne av
+rundt
+sammesteds
+sammestedsfra
+sidelangs
+sistpå
+som
+sommesteds
+smst
+sst.
+sst
+smst.
+styrbord
+syd
+sydetter
+sydfra
+sydost
+sydover
+sydpå
+sydvest
+sønna
+sønnafjells
+sønnafor
+sønnafra
+sønnenfjells
+sønnenfor
+sønnenfra
+sønnenom
+sør
+søraust
+søretter
+sørfra
+sørover
+sørpå
+sørvest
+sørøst
+så nær som
+så som
+så vel som
+takket være
+t. forskj. fra
+t forskj fra
+t.forskj.fra
+til
+til alters
+til fjells
+til gards
+til gårds
+til himmels
+til lands
+til og med
+til sengs
+til seters
+til sjøs
+til vanns
+til værs
+tilbake
+tillikemed
+tilstede
+t.o.m.
+t. o. m.
+trass
+tross
+uansett
+ult.
+ultimo
+under
+under vær med
+undervegs
+underveis
+unna
+unntagen
+unntatt
+ut
+ut av
+ut i
+ut over
+ut på
+utad
+utafor
+utafra
+utalands
+utapå
+utav
+ute
+utefra
+uten
+utendørs
+utenfor
+utenfra
+utenlands
+utenom
+utenpå
+utetter
+utfor
+uti
+utifra
+utmed
+utom
+utomhus
+utover
+utpå
+utved
+v/
+v.
+van
+ved
+ved hjelp av
+veggimellom
+vekk
+vekke
+versus
+vest
+vesta
+vestafjells
+vestafor
+vestafra
+vestenfjells
+vestenfor
+vestenfra
+vestenom
+vestfra
+vestover
+vestpå
+v.h.a.
+vha.
+vha
+v. h. a.
+via
+vis-a-vis
+vis-à-vis
+von
+v. s. a.
+vsa.
+vsa
+v.s.a.
+øst
+østa
+østafjells
+østafor
+østafra
+østenfjells
+østenfor
+østenfra
+østenom
+østetter
+østfra
+østover
+østpå
+åt

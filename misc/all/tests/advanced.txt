@@ -1,0 +1,5 @@
+Source	Target	Desc	Error
+none	(?i)^(?:Om|Hvis|Når) ((?!,).)*\.($|\s+|\R)	Lacking comma in Hvis sentence.	1/6
+none	ttt|lll|fff	Trippled consonant.	1/6
+.*[^\s]$	\s+$	Trailing space(s)	1/6
+^[^\s].*	^\s+	Leading space(s)	1/6

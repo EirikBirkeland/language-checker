@@ -1,0 +1,370 @@
+head	1.15;
+access;
+symbols;
+locks
+	eb:1.15; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.15
+date	2015.02.06.12.45.31;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.02.06.12.41.11;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.02.06.12.40.33;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.02.06.12.37.54;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.02.06.12.35.34;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.02.06.12.34.11;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.02.06.12.33.34;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.02.06.01.26.19;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.01.10.08.41.05;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.01.10.08.35.44;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.01.10.08.29.52;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.10.08.27.41;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.10.08.26.24;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.10.08.23.54;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.02.23.34.33;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.15
+log
+@vim
+@
+text
+@#use strict;
+#use warnings;
+#use utf8;
+use Data::Printer;
+use feature 'say';
+
+# Welcome to brute-force sentence parser. As of survey date, 10th of January, this looks like it could be simply added as a QA test.
+
+#my @@ARGV = split( / /, $string1 );
+p @@ARGV;
+open( VERB,   "<:encoding(ISO-8859-15)", "verb.txt" );
+open( ADVERB, "<:encoding(ISO-8859-15)", "adv.txt" );
+open( NOUN,   "<:encoding(ISO-8859-15)", "subst.txt" );
+open( ADJ,    "<:encoding(ISO-8859-15)", "adj.txt" );
+open( PRON,   "<:encoding(ISO-8859-15)", "pron.txt" );
+open( DET,    "<:encoding(ISO-8859-15)", "det.txt" );
+open( PREP,   "<:encoding(ISO-8859-15)", "prep.txt" );
+my @@verbs   = <VERB>;
+my @@adverbs = <ADVERB>;
+my @@nouns   = <NOUN>;
+my @@adj     = <ADJ>;
+my @@pron    = <PRON>;
+my @@det     = <DET>;
+my @@prep    = <PREP>;
+close( VERB, ADVERB, NOUN, ADJ, PRON, DET, PREP );
+chomp( @@verbs, @@adverbs, @@nouns, @@adj, @@pron, @@det, @@prep );
+
+( $verbs, $adverbs, $nouns, $adj, $pron, $det, $prep ) =
+  ( @@adverbs, @@nouns, @@adj, @@pron, @@det, @@prep );
+
+$verbs = @@verbs;
+say "There are $verbs verbs";
+$adverbs = @@adverbs;
+say "There are $adverbs adverbs";
+$nouns = @@nouns;
+say "There are $nouns nouns";
+$adj = @@adj;
+say "There are $adj adjectives";
+$pron = @@pron;
+say "There are $pron pronouns";
+$det = @@det;
+say "There are $det determiners";
+$prep = @@prep;
+say "There are $prep prepositions";
+
+%verbs   = map { $_ => 1 } @@verbs;
+%nouns   = map { $_ => 1 } @@nouns;
+%adverbs = map { $_ => 1 } @@adverbs;
+%adj     = map { $_ => 1 } @@adj;
+%pron    = map { $_ => 1 } @@pron;
+%det     = map { $_ => 1 } @@det;
+%prep    = map { $_ => 1 } @@prep;
+
+%results;
+my $parsed;
+my $i = 0;
+foreach $word (@@ARGV) {
+    say $word;
+    chomp $word;
+    if ( exists $det{$word} ) {
+        say "'$word' is a determiner.\n";
+        $results{$i} = "pronoun";
+        $parsed .= "pronoun ";
+    }
+    elsif ( exists $adverbs{$word} ) {
+        say "'$word' is an adverb.\n";
+        $results{$i} = "adverb";
+        $parsed .= "adverb ";
+    }
+    elsif ( exists $adj{$word} ) {
+        say "'$word' is an adjective.\n";
+        $results{$i} = "adj";
+        $parsed .= "adj ";
+    }
+    elsif ( exists $verbs{$word} ) {
+        say "'$word' is a verb.\n";
+        $results{$i} = "verb";
+        $parsed .= "verb ";
+    }
+    elsif ( exists $nouns{$word} ) {
+        say "'$word' is a noun.\n";
+        $results{$i} = "noun";
+        $parsed .= "noun ";
+    }
+    elsif ( exists $pron{$word} ) {
+        say "'$word' is a pronoun.\n";
+        $results{$i} = "pronoun";
+        $parsed .= "pronoun ";
+    }
+    elsif ( exists $prep{$word} ) {
+        say "'$word' is a determiner.\n";
+        $results{$i} = "pronoun";
+        $parsed .= "pronoun ";
+    }
+    elsif ( $word =~ /[A-ZÆØÅ][\w]+/ ) {
+        say "'$word' is a name.\n";
+        $results{$i} = "name";
+        $parsed .= "name ";
+    }
+    else { say "wtf.\n" }
+}
+
+my @@parsed = split(' ', $parsed);
+if ( $parsed =~ /adverb verb/ ) {
+    say "Illegal word order detected. 0012 will not like this.";
+
+    # One word has now been processed.
+    $i += 1;
+}
+
+if ( grep( /etter/, @@ARGV ) ) {
+  
+
+}
+
+p %results;
+say $parsed;
+p @@parsed;
+p @@ARGV;
+@
+
+
+1.14
+log
+@vim
+@
+text
+@d110 6
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d103 1
+a103 1
+my @@parsed = split(' ', $parser);
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d112 1
+a112 1
+p @@parser;
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d103 1
+a103 1
+
+d112 2
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d52 1
+a52 1
+%prep    = map { $_ => 1 } $prep;
+@
+
+
+1.9
+log
+@vim
+@
+text
+@a56 1
+chomp @@ARGV;
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d57 1
+a57 1
+
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d2 1
+a2 1
+##use warnings;
+d58 1
+a58 1
+foreach $word (<>) {
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d103 2
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d110 1
+a110 1
+#say $parsed;
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d7 1
+a7 1
+# Welcome to brute-force sentence parser
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d110 1
+a110 1
+say $parsed;
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d58 1
+a58 3
+open (FILE
+
+foreach $word (@@file) {
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d58 3
+a60 1
+foreach $word (@@ARGV) {
+@

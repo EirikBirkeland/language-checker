@@ -1,0 +1,64 @@
+head	1.2;
+access;
+symbols;
+locks
+	eb:1.2; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.2
+date	2015.10.01.01.22.44;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.10.01.01.15.51;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.2
+log
+@vim
+@
+text
+@use strict;
+use warnings;
+
+# I did this to see how I can improve an old function now :-) There are some differences, such as just 2 scalar input values.
+
+sub camelcase($$) {
+    my ( $source, $target ) = @@_;
+    my @@source = split( ' ', $source );
+
+    for my $word (@@source) {
+        if ($word =~ /(\w{3,})/) {
+            # to be continued 
+        }
+    }
+}
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d7 2
+a8 2
+    my ($source, $target) = @@_;
+    my @@source = split(' ', $source);
+d10 4
+a13 3
+    for my $word ( @@source ) {
+
+    }
+d15 1
+@

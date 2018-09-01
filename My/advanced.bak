@@ -1,0 +1,159 @@
+    use feature 'say';
+    use utf8;
+    use XML::LibXML;
+    use Data::Printer;
+    use Time::HiRes 'time';
+
+    my @span_tags =
+      qw(error adv_source adv_target source target wrong suggest type desc);
+
+    for my $tag (@span_tags) {
+        no strict 'refs';
+        *$tag = sub {
+            "<SPAN CLASS='$tag'>@_</SPAN>";
+        };
+    }
+
+    sub run_advanced_tests {
+        say $HTML;
+        my ( $source, $target, $results, $number ) = @_;
+        my ( $id, $adv_source, $adv_source_attr, $adv_target, $adv_target_attr,
+            $desc, $error );
+        my ( @id, @adv_source, @adv_source_attr, @adv_target, @adv_target_attr,
+            @desc, @error );
+
+        my $doc = XML::LibXML->new->parse_file("$DATA/advanced.xml");
+
+        #    binmode( STDOUT, ":encoding(UTF-8)" );
+        foreach my $TU ( $doc->findnodes('body/test-unit') ) {
+
+            my $id              = $TU->findvalue('./@id');
+            my $adv_source      = $TU->findvalue('./source');
+            my $adv_source_attr = $TU->findvalue('./source/@attr');
+            my $adv_target      = $TU->findvalue('./target');
+            my $adv_target_attr = $TU->findvalue('./target/@attr');
+            my $desc            = $TU->findvalue('./desc');
+            my $error           = $TU->findvalue('./error');
+            my $speed           = $TU->findvalue('./speed');
+
+            push( @id,              $id );
+            push( @adv_source,      $adv_source );
+            push( @adv_source_attr, $adv_source_attr );
+            push( @adv_target,      $adv_target );
+            push( @adv_target_attr, $adv_target_attr );
+            push( @desc,            $desc );
+            push( @error,           $error );
+            push( @speed,           $speed );
+        }
+
+# my @all = ( \@id, \@adv_source, \@adv_source_attr, \@adv_target, \@adv_target_attr, \@dec, \@error, \@speed )
+        my $startTime;
+        my $stopTime;
+
+# Compile regexes for increased performance (saved 50 ms in one measurement for just 15-20 tests.)
+#$adv_source = qr/$adv_source/;
+#$adv_target = qr/$adv_target/;
+        my $num_test = @id;
+        my $num      = @{$number};
+
+        my $red   = "\e[4;31m";
+        my $reset = "\e[0m";
+
+        my $ea =
+          each_arrayref( \@speed, \@adv_source, \@adv_target, \@adv_source_attr,
+            \@adv_target_attr, \@desc, \@error, \@id );
+
+        while (
+            my (
+                $speed,           $adv_source,      $adv_target,
+                $adv_source_attr, $adv_target_attr, $desc,
+                $error,           $id
+            )
+            = $ea->()
+          )
+        {
+
+            $x++
+              if ( defined $ARGV[2]
+                && $ARGV[2] =~ /fast/
+                && $speed =~ /[0-9]/
+                && $speed >= 0.05 );
+
+# TODO: Add counting of number of matches, and raise exception if numbers indicate more than the single error reported.
+# .
+            $startTime = time();
+
+            my $ab = each_arrayref( $source, $target, $number );
+            while ( my ( $source, $target, $number ) = $ab->() ) {
+
+                if (   ( $adv_source_attr =~ /invert/ )
+                    && ( $adv_target_attr !~ /invert/ ) )
+                {
+                    if (   ( $source !~ /$adv_source/ )
+                        && ( $target =~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                          "$error";
+                    }
+                }
+                elsif (( $adv_source_attr =~ /invert/ )
+                    && ( $adv_target_attr =~ /invert/ ) )
+                {
+                    if (   ( $source !~ /$adv_source/ )
+                        && ( $target !~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                          "$error";
+
+                    }
+                }
+                elsif (( $adv_source_attr !~ /invert/ )
+                    && ( $adv_target_attr =~ /invert/ ) )
+                {
+                    if (   ( $source =~ /$adv_source/ )
+                        && ( $target !~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                          "$error";
+                    }
+                }
+                else {
+                    if (   ( $source =~ /$adv_source/ )
+                        && ( $target =~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                          "$error";
+                        my $source_h     = $source;
+                        my $target_h     = $target;
+                        my $desc_h       = $desc;
+                        my $error_h      = $error;
+                        my $adv_source_h = $adv_source;
+                        my $adv_target_h = $adv_target;
+
+                        $source_h =~ s/(.*)/source($1)/e;
+                        $target_h =~ s/(.*)/target($1)/e;
+                        $desc_h =~ s/(.*)/desc($1)/e;
+                        $error_h =~ s/(.*)/error($1)/e;
+                        $adv_source_h =~ s/(.*)/adv_source($1)/e;
+                        $adv_target_h =~ s/(.*)/adv_target($1)/e;
+
+                        say
+"\n<p>\n$source_h<br>\n$target_h<br>\n$adv_source_h  ->  $adv_target_h<br>\n$desc_h ($error_h)\n</p>";
+
+                    }
+                }
+
+                $i += 1;
+
+            }
+            $stopTime = time();
+
+#  printf("Test source: $adv_source target: $adv_target took %.5f seconds.\n",$stopTime - $startTime );
+            if ( $stopTime - $startTime > 0.05 ) {
+                say
+                  "Test $id about $adv_source / $adv_target is very slow:",
+                  $stopTime - $startTime, "\nConsider optimizing.";
+            }
+        }
+    }
+    1;

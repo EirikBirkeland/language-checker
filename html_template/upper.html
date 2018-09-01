@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Test output</title>
+  <link rel="stylesheet" 
+href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <!--<link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-ui.js"></script>--> <style type="text/css">
+p {border: 2px solid black;padding:5px 5px 5px 5px}
+.source {bold}
+.target {bold}
+
+.wrong {color: black; background-color: ffb2b2}
+.suggest {color: black; background-color: b2ffb2}
+
+.adv_source {color: black; background-color: ffb2b2}
+.adv_target {color: black; background-color: b2ffb2} 
+
+.type {font-size: 75%}
+.desc {font-size: 75%}
+
+.error {color: black; background-color: ffb2b2}
+.container {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.container div {
+    width:100%;
+}
+.container .header {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container .content {
+    display: none;
+    padding : 5px;
+}
+</style>
+<script> $(function() {
+$( "#accordion" ).accordion({
+    collapsible: true,
+    heightStyle: "content"
+    });
+});
+</script>
+</head>
+<body>
+<div id="accordion">

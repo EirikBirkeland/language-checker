@@ -1,0 +1,9 @@
+- The test output is listed in the original segment order, but segments can be ordered as desired (JS), for example according to segments containing the most errors.
+
+- Results for individual test types can be enabled/disabled as wanted, with reasonable defaults.
+
+- Color highlighting is according to numeric factors such as error weight and likelihood of being a true error or a FP. Each highlighted error can be right-clicked to choose whether it's really an error or a false positive. The answer is submitted seamlessly and affects the program's log/settings.
+
+- Data representation (JavaScript and stylesheet switching) can be done by clicking different tabs.
+
+- There is a field for mailing a error log dump according to current view setting to an e-mail address.

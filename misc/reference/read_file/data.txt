@@ -1,0 +1,3 @@
+Google	Google
+Trippled letters	lll|ttt|fff|sss
+For å	For å(?:(?!\bom\b|\bat\b).)*?,.*?\.

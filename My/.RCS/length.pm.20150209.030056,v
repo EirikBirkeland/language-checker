@@ -1,0 +1,60 @@
+head	1.1;
+access;
+symbols;
+locks
+	eb:1.1; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.1
+date	2015.02.09.02.00.56;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.1
+log
+@vim
+@
+text
+@use feature 'say';
+
+
+my @@span_tags = qw(source target percent report);
+for my $tag(@@span_tags) {
+    no strict 'refs';
+    *$tag = sub {
+        "<SPAN CLASS='$tag'>@@_</SPAN>";
+    }
+}
+
+sub check_string_length {
+
+# Compare string lengths.
+# Add comparison of number of periods and commas. Suggest to user that target is missing or contains extra sentences! Also, count number of total words and compare.
+
+    my ( $source, $target, $results, $number ) = @@_;
+
+    for ( my $i = 0 ; $i < @@{$number} ; $i++ ) {
+        my $sourceLength = length( ${$source}[$i] );
+        my $targetLength = length( ${$target}[$i] );
+        my $percent = sprintf( "%.f", $targetLength / $sourceLength * 100 );
+        if ( $sourceLength > 25
+            && ( $percent < 60 || $percent > 150 ) )
+        {
+            
+            say "$$source[$i]\n\n$$target[$i]\n\n";
+            say "Translation is $percent% of source\n";
+
+            ${$results}{"id=\"${$number}[$i]\""}{length} = "$percent %";
+        }
+    }
+}
+1;
+@

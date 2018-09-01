@@ -1,0 +1,918 @@
+head	1.49;
+access;
+symbols;
+locks
+	eb:1.49; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.49
+date	2015.03.03.21.18.06;	author eb;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2015.03.01.22.11.33;	author eb;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2015.02.15.23.09.02;	author eb;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2015.02.15.23.08.43;	author eb;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2015.02.15.23.08.14;	author eb;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2015.02.15.23.07.55;	author eb;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2015.02.15.23.07.39;	author eb;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2015.02.15.23.07.13;	author eb;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2015.02.15.23.07.06;	author eb;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2015.02.15.23.03.20;	author eb;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2015.02.15.23.03.07;	author eb;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.02.15.23.02.53;	author eb;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.02.15.23.02.33;	author eb;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.02.15.23.02.10;	author eb;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.02.15.23.01.44;	author eb;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.02.15.23.01.08;	author eb;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.02.15.23.00.46;	author eb;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.02.15.22.59.42;	author eb;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.02.15.22.59.27;	author eb;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.02.15.22.59.15;	author eb;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2015.02.15.22.59.01;	author eb;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.02.15.22.58.44;	author eb;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2015.02.15.22.58.24;	author eb;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2015.02.15.22.57.02;	author eb;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.02.15.22.56.21;	author eb;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.02.15.22.55.17;	author eb;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.02.15.22.54.23;	author eb;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.02.15.22.53.38;	author eb;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.02.15.22.52.43;	author eb;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.02.15.22.49.38;	author eb;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.02.15.22.47.41;	author eb;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.02.15.22.46.41;	author eb;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.02.15.22.45.39;	author eb;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.02.15.22.45.10;	author eb;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.02.15.22.42.44;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.02.15.22.42.43;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.02.15.22.42.39;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.02.15.22.41.34;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.02.15.22.40.57;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.02.15.22.38.58;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.02.15.22.37.57;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.02.15.22.37.18;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.02.15.22.37.08;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.02.15.22.35.28;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.02.15.22.33.02;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.02.15.22.30.08;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.02.15.22.14.23;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.02.15.22.06.22;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.02.09.17.15.34;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.49
+log
+@vim
+@
+text
+@use 5.10.1;
+use feature 'say';
+use utf8;
+sub run_simple_tests {
+
+my $red = "\e[1;31m";
+my $reset = "\e[0m";
+
+    my ( $simpleLines, $target, $results, $number ) = @@_;
+    for ( my $x = 0 ; $x < @@{$simpleLines} ; $x++ ) {
+        my @@field = split /\t/, @@{$simpleLines}[$x];
+        chomp @@field;
+        my $ea = each_arrayref( $target, $number );
+        while ( my ( $target, $number ) = $ea->() ) {
+            if ( $target =~ /$field[0]/ ) {
+
+                my $target_html = $target;
+                my $field0_html = $field[0];
+                my $field1_html = $field[1];
+
+                $target_html =~ s/(.*)/target($1)/e;
+                $field0_html =~ s/(.*)/wrong($1)/e;
+                $field1_html =~ s/(.*)/suggest($1)/e;
+
+                my $target_ansi = $target;
+                my $field0_ansi = $field[0];
+                my $field1_ansi = $field[1];
+
+                $field0_ansi =~ s/(.*)/$red$1$reset/;
+
+                say "<p>$target<br>$field[0] -> $field[1]</p>";
+                warn "$target_ansi\n$field0_ansi -> $field1_ansi\n\n";
+                ${$results}{"id=\"$number\""}{simple}{ $field[0] } += "1";
+            }
+        }
+    }
+}
+1;
+@
+
+
+1.48
+log
+@vim
+@
+text
+@a28 1
+                say "LOL: $target_ansi";
+@
+
+
+1.47
+log
+@vim
+@
+text
+@d1 1
+a1 1
+use 5.20.1;
+@
+
+
+1.46
+log
+@vim
+@
+text
+@a29 1
+                $target_ansi =~ s/(.*)/$1/;
+a30 1
+                $field1_ansi =~ s/(.*)/$1/;
+@
+
+
+1.45
+log
+@vim
+@
+text
+@d1 1
+@
+
+
+1.44
+log
+@vim
+@
+text
+@d2 1
+@
+
+
+1.43
+log
+@vim
+@
+text
+@d29 1
+a29 1
+                $field0_ansi =~ s/(.*)/$red$1$reset/e;
+@
+
+
+1.42
+log
+@vim
+@
+text
+@d28 1
+a28 1
+                $target_ansi =~ s/(.*)/$1/e;
+@
+
+
+1.41
+log
+@vim
+@
+text
+@d33 1
+a33 1
+                warn "$target_ansi\n$field0_ansi", RESET " -> $field1_ansi\n\n";
+@
+
+
+1.40
+log
+@vim
+@
+text
+@a1 1
+use Term::ANSIColor qw(:ALL);
+d4 3
+d29 1
+a29 1
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE($1)/e;
+@
+
+
+1.39
+log
+@vim
+@
+text
+@d2 1
+a2 1
+use Term::ANSIColor qw(:all);
+@
+
+
+1.38
+log
+@vim
+@
+text
+@d2 1
+a2 1
+use Term::ANSIColor;
+@
+
+
+1.37
+log
+@vim
+@
+text
+@d2 1
+a2 1
+
+@
+
+
+1.36
+log
+@vim
+@
+text
+@d31 1
+a31 1
+                warn "$target_ansi\n$field0_ansi", RESET, " -> $field1_ansi\n\n";
+@
+
+
+1.35
+log
+@vim
+@
+text
+@d31 1
+a31 1
+                warn "$target_ansi\n$field0_ansi", reset, " -> $field1_ansi\n\n";
+@
+
+
+1.34
+log
+@vim
+@
+text
+@d30 2
+a31 2
+                say "<p>$target<br>$field[0]", RESET, " -> $field[1]</p>";
+                warn "$target_ansi\n$field0_ansi -> $field1_ansi\n\n";
+@
+
+
+1.33
+log
+@vim
+@
+text
+@d30 1
+a30 1
+                say "<p>$target<br>$field[0] -> $field[1]</p>";
+@
+
+
+1.32
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE($1)RESET/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE($1)RESET/e;
+@
+
+
+1.31
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE($1)RESET()/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE($1)RESET()/e;
+@
+
+
+1.30
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE($1), RESET()/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE($1), RESET()/e;
+@
+
+
+1.29
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE($1), RESET/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE($1), RESET/e;
+@
+
+
+1.28
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE, $1, RESET/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE, $1, RESET/e;
+@
+
+
+1.27
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE, $1/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE, $1/e;
+@
+
+
+1.26
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/BRIGHT_BLUE($1)/e;
+                $field0_ansi =~ s/(.*)/BRIGHT_BLUE($1)/e;
+@
+
+
+1.25
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/RESET BRIGHT_BLUE($1)/e;
+                $field0_ansi =~ s/(.*)/RESET BRIGHT_BLUE($1)/e;
+@
+
+
+1.24
+log
+@vim
+@
+text
+@d26 2
+a27 2
+                $target_ansi =~ s/(.*)/RESET ON_BLUE($1)/e;
+                $field0_ansi =~ s/(.*)/RESET ON_BLUE($1)/e;
+@
+
+
+1.23
+log
+@vim
+@
+text
+@d1 2
+@
+
+
+1.22
+log
+@vim
+@
+text
+@a0 4
+use Time::HiRes 'time';
+use feature 'say';
+use utf8;
+
+@
+
+
+1.21
+log
+@vim
+@
+text
+@d28 2
+a29 2
+                $target_ansi =~ s/(.*)/ON_BLUE($1)/e;
+                $field0_ansi =~ s/(.*)/ON_BLUE($1)/e;
+@
+
+
+1.20
+log
+@vim
+@
+text
+@d28 2
+a29 2
+                $target_ansi =~ s/(.*)/RED($1), RESET()/e;
+                $field0_ansi =~ s/(.*)/RED($1), RESET()/e;
+@
+
+
+1.19
+log
+@vim
+@
+text
+@d28 2
+a29 2
+                $target_ansi =~ s/(.*)/RED($1)RESET()/e;
+                $field0_ansi =~ s/(.*)/RED($1)RESET()/e;
+@
+
+
+1.18
+log
+@vim
+@
+text
+@d27 1
+@
+
+
+1.17
+log
+@vim
+@
+text
+@d27 2
+a28 3
+                say "$target\n$field[0]\n$field[1]";
+                $target_ansi =~ s/(.*)/RED($1), RESET()/e;
+                $field0_ansi =~ s/(.*)/RED($1), RESET()/e;
+@
+
+
+1.16
+log
+@vim
+@
+text
+@d27 1
+a27 1
+                say "target\n$field[0]\n$field[1]";
+@
+
+
+1.15
+log
+@vim
+@
+text
+@d27 1
+@
+
+
+1.14
+log
+@vim
+@
+text
+@d25 1
+a25 1
+                my $field1_ansi  = $field[1];
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d23 1
+a23 1
+                my $target_ansi = $target;;
+d25 1
+a25 1
+                my $ield1_ansi = $field[1];
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d23 3
+a25 3
+                my $target_ansi;
+                my $field0_ansi;
+                my $ield1_ansi;
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d27 2
+a28 2
+                $target_ansi =~ s/(.*)/RED($1)RESET()/e;
+                $field0_ansi =~ s/(.*)/RED($1)RESET()/e;
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d27 2
+a28 2
+                $target_ansi =~ s/(.*)/RED($1)RESET/e;
+                $field0_ansi =~ s/(.*)/RED($1)RESET/e;
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d27 2
+a28 2
+                $target_ansi =~ s/(.*)/RED($1)/e;
+                $field0_ansi =~ s/(.*)/RED($1)/e;
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d19 3
+a21 3
+                $target_html =~ s/(.*)/target($1)/e );
+                $field0_html =~ s/(.*)/wrong($1)/e );
+                $field1_html =~ s/(.*)/suggest($1)/e );
+d27 3
+a29 3
+                $target_ansi =~ s/(.*)/RED($1)/e );
+                $field0_ansi =~ s/(.*)/RED($1)/e );
+                $field1_ansi =~ s/(.*)/$1/ );
+@
+
+
+1.7
+log
+@vim
+@
+text
+@a13 4
+               
+my $target_html = $target;
+my $field0_html = $field[0];
+my $field1_html = $field[1];
+d15 3
+a17 3
+                $target_html =~ s/(.*)/target($1)/e);
+                $field0_html =~ s/(.*)/wrong($1)/e);
+                $field1_html =~ s/(.*)/suggest($1)/e);
+d19 3
+a21 4
+               
+my $target_ansi;
+my $field0_ansi;
+my $ield1_ansi;
+d23 7
+a30 4
+                $target_ansi =~ s/(.*)/RED($1)/e);
+                $field0_ansi =~ s/(.*)/RED($1)/e);
+                $field1_ansi =~ s/(.*)/$1/);
+                
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d14 8
+a21 4
+                
+                my $target_html ( = $target =~ s/(.*)/target($1)/e);
+                my $field0_html ( = $field[0] =~ s/(.*)/wrong($1)/e);
+                my $field1_html ( = $field[1] =~ s/(.*)/suggest($1)/e);
+d24 4
+d29 3
+a31 3
+                my $target_ansi = ($target =~ s/(.*)/RED($1)/e);
+                my $field0_ansi = ($field[0] =~ s/(.*)/RED($1)/e);
+                my $field1_ansi = ($field[1] =~ s/(.*)/$1/);
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d15 6
+a20 4
+                my $target_html = ($target =~ s/(.*)/target($1)/e);
+                my $field0_html = ($field[0] =~ s/(.*)/wrong($1)/e);
+                my $field1_html = ($field[1] =~ s/(.*)/suggest($1)/e);
+                
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d15 3
+a17 3
+                my $target_html = $target =~ s/(.*)/target($1)/e;
+                my $field0_html = $field[0] =~ s/(.*)/wrong($1)/e;
+                my $field1_html = $field[1] =~ s/(.*)/suggest($1)/e;
+d19 3
+a21 3
+                my $target_ansi = $target =~ s/(.*)/RED($1)/e;
+                my $field0_ansi = $field[0] =~ s/(.*)/RED($1)/e;
+                my $field1_ansi = $field[1] =~ s/(.*)/$1/;
+@
+
+
+1.3
+log
+@vim
+@
+text
+@a15 1
+                my $target_ansi = $target =~ s/(.*)/$red$1$reset/;
+d18 3
+a20 1
+                my $field0_ansi = $field[0] =~ s/(.*)/$red$1$reset/;
+d22 1
+d24 1
+a24 1
+                warn "$target\n$field[0] -> $field[1]\n\n";
+@
+
+
+1.2
+log
+@vim
+@
+text
+@a4 9
+my @@span_tags = qw(target wrong suggest type);
+
+for my $tag (@@span_tags) {
+    no strict 'refs';
+    *$tag = sub {
+        "<SPAN CLASS='$tag'>@@_</SPAN>";
+    };
+}
+
+@
+
+
+1.1
+log
+@vim
+@
+text
+@a15 1
+    #  YELLOW, " ⟶  ", BLUE, "$field[1]\n\n", RESET;
+d23 7
+a29 6
+                $target =~ s/($field[0])/wrong($1)/eg;
+                $target =~ s/(.*)/target($1)/e;
+                $field[0] =~ s/(.*)/wrong($1)/e;
+                $field[1] =~ s/(.*)/suggest($1)/e;
+
+                # my $html_string =
+d31 1
+a31 1
+
+@

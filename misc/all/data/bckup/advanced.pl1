@@ -1,0 +1,21 @@
+#!/bin/perl
+use Data::Dumper;
+use feature 'say';
+
+sub run_advanced_tests {
+    my @dataLines = @{ $_[0] };
+    my $target    = $_[1];
+    my $i         = 0;
+    foreach (@dataLines) {
+        my @field = split /\t/, $dataLines[$i];
+        chomp @field;
+       # say @field[0];
+        if ( $target =~ /$field[0]/ ) {
+           #   push @{$results{$number}}, "advanced";
+            say $field[2];
+            $results{$number}{advanced}+=$field[2];
+        }
+        $i += 1;
+    }
+}
+1;

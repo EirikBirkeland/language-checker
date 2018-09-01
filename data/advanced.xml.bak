@@ -1,0 +1,255 @@
+<body>
+<test-unit id="1">
+<source>^</source>
+<target>(?i)^(?:Om|Hvis|Når|Før|Med mindre|På grunn av) ((?!,).)*\.($|\s+|\R)</target>
+<desc>Lacking comma in Hvis sentence.</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="2">
+<source>^</source>
+<target>kkk|ttt|lll|fff</target>
+<desc>Trippled consonant.</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="3">
+<source>[^\s]$</source>
+<target>\s+$</target>
+<desc>Trailing space(s)</desc>
+<error>0.166666666666667</error>
+<speed>0.0698</speed>
+</test-unit>
+
+<test-unit id="4">
+<source>^[^\s]</source>
+<target>^\s+</target>
+<desc>Leading space(s)</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="5">
+<source attr="invert">[[:space:]][[:space:]]</source> <!--"| \.$" -->
+<target>[[:space:]][[:space:]]</target>
+<desc>Double space in target only</desc>
+<error>0.166666666666667</error>
+<speed>0.079</speed>
+</test-unit>
+
+<test-unit id="6">
+<source>none</source>
+<target>[\w]+, [\w]+, og [\w]+</target>
+<desc>Unneeded comma.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="7">
+<source>^</source>
+<target hint="^For å">(For å (\w+ ){1,5}(?:\bom\b|\bat\b)((?!,).)*?\.)</target>
+<desc>Missing comma in "For å ... om/at ..." sentence.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="8">
+<source>^</source>
+<target hint="^For å">For å(?:(?!\bom\b|\bat\b).)*?,.*?\.</target>
+<desc>Unneeded comma in "For å ..." sentence.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="9">
+<source attr="invert">\b(\w{2,})\b \b\1\b</source>
+<target>\b(\w{2,})\b \b\1\b</target>
+<desc>Repeated word</desc>
+<error>1</error>
+<speed>0.3218</speed>
+</test-unit>
+
+<test-unit id="10">
+<source>\.$</source> <!-- add exception for ellipsis alt+0133 -->
+<target>[^.!… ]$</target> <!-- should add exception for segments not containing alphanumeric -->
+<desc>Period missing in target</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="11">
+<source>[^."”!]$</source>
+<target>\.$</target>  <!-- should add a test for detecting incorrect end punctuation (such as comma) -->
+<desc>Period missing in source</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="12">
+<source attr="invert">[[:space:]]\.</source>
+<target>[[:space:]]\.</target>
+<desc>Suspicious space before period</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="13">
+<source attr="invert">[[:space:]]\,</source>
+<target>[[:space:]]\,</target>
+<desc>Suspicious space before comma</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="14">
+<source>^</source>
+<target>^\s*$</target>
+<desc>Target is missing!</desc>
+<error>3</error>
+</test-unit>
+
+<test-unit id="15">
+<source>^</source>
+<target>[0-9]*[.,]?[0-9]+ (?:AFN|EUR|ALL|DZD|USD|EUR|AOA|XCD|XCD|ARS|AMD|AWG|AUD|EUR|AZN|BSD|BHD|BDT|BBD|BYR|EUR|BZD|XOF|BMD|BTN|INR|BOB|BOV|USD|BAM|BWP|NOK|BRL|USD|BND|BGN|XOF|BIF|KHR|XAF|CAD|CVE|KYD|XAF|XAF|CLF|CLP|CNY|AUD|AUD|COP|COU|KMF|XAF|CDF|NZD|CRC|XOF|HRK|CUC|CUP|ANG|EUR|CZK|DKK|DJF|XCD|DOP|USD|EGP|SVC|USD|XAF|ERN|EUR|ETB|EUR|FKP|DKK|FJD|EUR|EUR|EUR|XPF|EUR|XAF|GMD|GEL|EUR|GHS|GIP|EUR|DKK|XCD|EUR|USD|GTQ|GBP|GNF|XOF|GYD|HTG|USD|AUD|EUR|HNL|HKD|HUF|ISK|INR|IDR|XDR|IRR|IQD|EUR|GBP|ILS|EUR|JMD|JPY|GBP|JOD|KZT|KES|AUD|KPW|KRW|KWD|KGS|LAK|EUR|LBP|LSL|ZAR|LRD|LYD|CHF|EUR|EUR|MOP|MKD|MGA|MWK|MYR|MVR|XOF|EUR|USD|EUR|MRO|MUR|EUR|XUA|MXN|MXV|USD|MDL|EUR|MNT|EUR|XCD|MAD|MZN|MMK|NAD|ZAR|AUD|NPR|EUR|XPF|NZD|NIO|XOF|NGN|NZD|AUD|USD|NOK|OMR|PKR|USD|PAB|USD|PGK|PYG|PEN|PHP|NZD|PLN|EUR|USD|QAR|EUR|RON|RUB|RWF|EUR|SHP|XCD|XCD|EUR|EUR|XCD|WST|EUR|STD|SAR|XOF|RSD|SCR|SLL|SGD|ANG|XSU|EUR|EUR|SBD|SOS|ZAR|SSP|EUR|LKR|SDG|SRD|NOK|SZL|SEK|CHE|CHF|CHW|SYP|TWD|TJS|TZS|THB|USD|XOF|NZD|TOP|TTD|TND|TRY|TMT|USD|AUD|UGX|UAH|AED|GBP|USD|USN|USD|UYI|UYU|UZS|VUV|VEF|VND|USD|USD|XPF|MAD|YER|ZMW|ZWL|XBA|XBB|XBC|XBD|XTS|XXX|XAU|XPD|XPT|XAG)</target> <!-- Should detect only valid currency codes! Fun to add it! -->
+<desc>Currency code in wrong location</desc>
+<error>1</error>
+<speed>0.052</speed>
+</test-unit>
+
+<test-unit id="16" attr="long/short"> <!-- doesn't work, why? oh, backreferences won't be carried over. This must be fixed somehow! such as sticking $1 into another variable -->
+<source>disabled==(.)$</source>
+<target attr="invert">disabled==$1$</target>
+<desc>The last character differs!</desc>
+<error>3</error>
+</test-unit>
+
+<test-unit id="17">
+<source>^</source>
+<target>(?&lt;= )"|"(?=[-.,) ]|$)</target>
+<desc>Incorrect quote type</desc>
+<instruction>SG 2.1.2 Quotation Marks\r\nThe correct quotations marks in Norwegian are « <bold>and</bold> ». Don't follow source on using “ and ”. (See &lt;a href="http://www.korrekturavdelingen.no/K4Anforselstegn.htm"&gt;Korrekturavdelingen’s article&lt;/a&gt; on quotations marks.)
+</instruction>
+<error>1</error>
+</test-unit>
+
+<test-unit id="18">
+<source>^</source>
+<target>\b[0-9]{2}:[0-9]{2}\b</target>
+<desc>Date format containing colon</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="19">
+<source>[0-9]</source>
+<target>[0-9](?:V|A)\b</target>
+<desc>Space missing between number and unit</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="20">
+<source></source>
+<target>(?=.*\bmåte\b)^((?!på).)*$</target>
+<desc>"på" is missing in "måte" construction.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="21">
+<source>make sure</source>
+<target>pass på</target>
+<desc>Pass på -> Sørg for "make sure"!</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="22">
+<source>factory data reset</source>
+<target>tilbakestilling av dataene til fabrikkstandard</target>
+<desc>"dataene" not needed</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="23">
+<source>1|\bone\b</source>
+<target attr="invert">1|\b(?:én|ett|du)\b</target>
+<desc>Numeral 1 missing in target.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="24">
+<source>2|\btwo\b</source>
+<target attr="invert">2|\bto\b</target>
+<desc>Numeral 2 missing in target</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="25">
+<source>3|\bthree\b</source>
+<target attr="invert">3|\btre\b</target>
+<desc>Numeral 3 missing in target</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="26">
+<source>4|\bfour\b</source>
+<target attr="invert">4|\bfire\b</target>
+<desc>Numeral 4 missing in target</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="27">
+<source>[0-9]-[0-9]</source>
+<target>[0-9]-[0-9]</target>
+<desc>Possibly missing en-dash between numbers</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="28">
+<source>lost device</source>
+<target>tapt enhet</target>
+<desc>tapt enhet -> enhet du har mistet</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="29">
+<source>^</source>
+<target>: [^A-Z0-9].{20,}</target>
+<desc>Long part after colon does not have initial caps</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="30">
+<source>^</source>
+<target>[a-zæøåA-ZÆØÅ]{25,}</target>
+<desc>Long word (25+ chars)</desc>
+<error>1</error>
+</test-unit>
+
+<!-- "Etter (at) <noun> <verb>" needs parser.
+<test-unit id="31">
+<source>^</source>
+<target>etter (?!at|hvert)</target>
+<desc>'at' may be missing after 'etter'.</desc>
+<error>1</error>
+</test-unit>
+-->
+<test-unit id="32">
+<source>^</source>
+<target>Hei\b[^,]|Hei,.*?,$</target>
+<desc>Missing comma after hei, or English style comma at end of greeting</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="33">
+<source>(\[[A-Z0-9 ]+\])</source>
+<target attr="invert">(\[[A-Z0-9 ]+\])</target> <!-- Need to add support for $1 between different searches.-->
+<desc>Untranslatable w/ square brackets in source missing in target</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="34">
+<source>^</source>
+<target>en dine\b|ene din\b</target>
+<desc>Invalid concordance (ene din, en dine, etc.)</desc>
+<error>1</error>
+</test-unit>
+
+
+
+
+
+
+
+
+
+</body>

@@ -1,0 +1,402 @@
+head	1.22;
+access;
+symbols;
+locks
+	eb:1.22; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.22
+date	2015.01.08.19.35.38;	author eb;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.01.08.19.35.29;	author eb;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.01.08.19.35.20;	author eb;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.01.08.19.33.27;	author eb;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.01.08.19.31.50;	author eb;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.01.08.19.31.01;	author eb;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.01.08.19.30.50;	author eb;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.01.08.19.30.27;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.01.08.19.30.08;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.01.08.19.29.43;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.01.08.19.29.20;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.01.08.19.28.05;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.01.08.19.27.55;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.01.08.19.27.39;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.01.08.19.27.31;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.01.08.19.26.19;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.01.08.19.26.05;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.01.08.19.24.09;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.08.19.23.21;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.08.19.23.07;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.08.19.23.03;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.08.19.22.54;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.22
+log
+@vim
+@
+text
+@#!/usr/bin/env perl 
+use strict;
+use warnings;
+use utf8;
+
+my $source = "YouTube";
+my $target = "Youtube";
+
+my ($test) = $source =~ /([a-zA-Z]{5,})/;
+if ( $target =~ /$test/i ) {
+    if ( $target !~ /$test/ ) {
+        print
+"Likely untranslatable $test was found in target, but the capitalization is incorrect.";
+    }
+}
+@
+
+
+1.21
+log
+@vim
+@
+text
+@d7 1
+a7 1
+my $target = "YouTube";
+@
+
+
+1.20
+log
+@vim
+@
+text
+@d7 1
+a7 1
+my $target = "Youtube";
+d10 1
+a10 1
+  if ( $target =~ /$test/i ) {
+d12 3
+a14 2
+        print "Likely untranslatable $test was found in target, but the capitalization is incorrect.";
+}
+@
+
+
+1.19
+log
+@vim
+@
+text
+@d13 1
+a13 1
+    }
+@
+
+
+1.18
+log
+@vim
+@
+text
+@d8 1
+a8 1
+#my $test;
+d10 1
+a10 1
+  if ( $source =~ /$test/ && $target =~ /$test/i ) {
+@
+
+
+1.17
+log
+@vim
+@
+text
+@d8 2
+a9 3
+my $test;
+($test) = $source =~ /([a-zA-Z]{5,})/;
+print $test;
+@
+
+
+1.16
+log
+@vim
+@
+text
+@d13 1
+a13 1
+        print "Likely untranslatable $1 was found in target, but the capitalization is incorrect.";
+@
+
+
+1.15
+log
+@vim
+@
+text
+@d8 2
+a9 1
+my ($test) = $source =~ /([a-zA-Z]{5,})/;
+@
+
+
+1.14
+log
+@vim
+@
+text
+@d8 1
+a8 1
+my $test = $source =~ /([a-zA-Z]{5,})/;
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d8 1
+a8 1
+my $test = $source =~ /(\w{5,})/;
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d9 1
+a9 1
+
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d8 3
+a10 2
+my $test;
+  if ( ($test) = $source =~ /(\w{5,})/ && $target =~ /$test/i ) {
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d8 2
+a9 2
+
+  if ( my ($test) = $source =~ /(\w{5,})/ && $target =~ /$test/i ) {
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d9 1
+a9 1
+  if ( (my $test) = $source =~ /(\w{5,})/ && $target =~ /$test/i ) {
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d9 2
+a10 2
+  if ( (my $test) = $source =~ /(\w{5,})/ && $target =~ /$1/i ) {
+    if ( $target !~ /$1/ ) {
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d9 1
+a9 1
+  if ( $source =~ /(\w{5,})/ && $target =~ /$1/i ) {
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d7 1
+a7 1
+my $arget = "Youtube";
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d6 3
+a8 1
+if insensitive match word of 5 + letters in both source & target then
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d7 3
+a9 3
+    if ( $source =~ /(\w{5,})/ && $target =~ /$1/i ) {
+      if ( $target !~ /$1/ ) {
+          print $1 was found in target, but the capitalization is incorrect .;
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d7 3
+a9 3
+  if ( $source =~ /(\w{5,})/ && $target =~ /$1/i ) {
+    if ( $target !~ /$1/ ) {
+        print $1 was found in target, but the capitalization is incorrect .;
+@
+
+
+1.2
+log
+@vim
+@
+text
+@a7 1
+
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d6 2
+a7 3
+if insensitive match word of 5+ letters in both source & target
+then
+if ($source =~ /(\w{5,})/ && $target =~ /$1/i) {
+d9 3
+a11 3
+if ($target !~ /$1/) {
+print $1 was found in target, but the capitalization is incorrect.
+}
+@

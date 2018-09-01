@@ -1,0 +1,1 @@
+For å	For å(?:(?!\bom\b|\bat\b).)*?,.*?\.	oh my	1	dunno	dec01

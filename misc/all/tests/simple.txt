@@ -1,0 +1,86 @@
+logger deg inn	logger på
+kun	bare
+URL	nettadresse
+disabled_igjen	på nytt 
+logg deg på|logg inn på*	logg på
+Chrome Dashboard	Chrome Oversikt
+spam	søppelpost/nettsøppel
+disabled_ved siden av	ved
+du ønsker å	du vil
+ved hjelp av	med
+være i stand til å?	kan
+gav	ga
+oppgav	oppga
+[^,] men	, men
+skjermbilde	skjermdump
+på tvers av (?:enheter)*	mellom *eller* ulike *eller* på (enheter)
+e-post-adresse	e-postadresse
+Google Store	Google Butikk
+Google Now	Google Nå
+view    vise	se (på)	In source: view
+Aktiver	Aktivér
+Plasser	Plassér
+Kontroller	Kontrollér
+Eksporter	Eksportér
+Importer	Importér
+Kopier	Kopiér
+Reserver	Reservér
+Marker	Markér
+Skisser	Skissér
+Sorter	Sortér
+^Rapporter	Rapportér
+Roter	Rotér
+Arkiver	Arkivér
+Sorter	Sortér
+Blokker	Blokkér
+(?:Lær|Les) mer	Finn ut mer
+hl=en|\/intl\/en\/	"hl=no" *eller* "/intl/no"
+berøre?	trykk(e)
+Full Access	Full tilgang
+etter eller før	før eller etter
+disabled_på eller av	av eller på
+har blitt	er blitt
+anbefales for deg	anbefalt for deg
+preferanser	innstillinger
+plassér bestilling	legg inn bestilling
+øverst i høyre hjørne	oppe til høyre *eller* i øverste høyre hjørne
+Google Play Filmer og TV	Google Play Filmer
+akseptere?	godta
+som for eksempel	for eksempel
+Chromecast-enhet(?:en)?	Chromecasten
+skjermen forblir på	skjermen holder seg på
+MVA\.?	mva.
+f.eks.	for eksempel
+berører?|berøring	trykk(e)(r)
+varsling(?:er)?	varsel/varsler
+besøke?	gå til (nettsted)	Context:nettsted
+(?i)WiFi	Wi-Fi
+etc\.	osv.
+Play Music	Play Musikk
+Chrome Web Store	Chrome Nettmarked
+Google Drive	Google Disk
+betalingsmetode	betalingsmåte
+OK Google	Ok Google
+sette? opp	konfigurer(e)
+addresse	adresse
+krypter	kryptér
+lanser	lansér
+animer	animér
+SafeSearch|Sikkert søk	Sikkert Søk
+(basert på) sånt som	(basert på) sånt som
+innstillingermenyen	innstillinger-menyen|innstillingsmenyen
+(Google Kalender-)hendelse	(Google Kalender-)aktivitet
+Google+-hendelse	Google+-arrangement
+snarvei	hurtigtast	Context:tastatur
+omdirigeringer	viderekoblinger
+Google Pluss	Google+
+vilkår for bruk for Google Play	vilkår for bruk av Google Play
+nærliggende enheter	enheter i nærheten
+betalingsmetode	betalingsmåte
+timing	tid|tids-|tidsramme
+frakoblet	ikke koblet til nettet
+bærbare? (?:sensor(?:er)?)?	(sensorer) man har på seg
+Installér	Installer
+Google Butikk	Google Store
+Cloud \(nett-\)sky
+Vennlig hilsen,   Vennlig hilsen

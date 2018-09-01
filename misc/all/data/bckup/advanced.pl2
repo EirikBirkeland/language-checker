@@ -1,0 +1,42 @@
+    use feature 'say';
+    use utf8;
+    use Number::Fraction;
+    sub run_advanced_tests {
+        $doc = XML::LibXML->new->parse_file('tests/advanced.xml');
+        foreach my $TU ( $doc->findnodes('body/test-unit')){
+            my $id = $TU->findnodes('./@id');
+            my $source = $TU->findnodes('./source');
+            my $target = $TU->findnodes('./target');
+            my $desc = $TU->findnodes('./desc');
+            my $error = $TU->findnodes('./error');
+      #      say "$id\n$source\n$target\n$desc\n$error\n";
+        }
+        my @dataLines = @{ $_[0] };
+        my $source    = $_[1];
+        my $target    = $_[2];
+        my $i         = 0;
+
+        #    my $header = shift @dataLines;
+        #    chomp $header;
+        #    say "\n", $header;
+        #    my @header = split /\t/, $header;
+        #    p (@header);
+
+        foreach (@dataLines) {
+            my @field = split /\t/, $dataLines[$i];
+            chomp @field;
+            if ( $field[0] =~ /none/ ) {
+                $field[0] = ".";
+            }
+            if (   ( $source =~ /$field[0]/ )
+                && ( $target =~ /$field[1]/ ) )
+            {
+         #   $field[3] = Number::Fraction->new($field[3]);
+                $results{"id=\"$number\""}{advanced}{ $field[2] } += $field[3];
+                say $field[2];
+                say $target;
+            }
+            $i += 1;
+        }
+    }
+    1;

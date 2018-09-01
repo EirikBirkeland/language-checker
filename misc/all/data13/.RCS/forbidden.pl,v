@@ -1,0 +1,48 @@
+head	1.2;
+access;
+symbols;
+locks
+	eb:1.2; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.2
+date	2015.01.08.19.46.45;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.07.11.58.26;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.2
+log
+@vim
+@
+text
+@forbidden{
+# How can this be done as fast as possible? perhaps non-regex way.
+
+if target =~ /Google Play/ {
+print "forbidden term found";
+}
+}
+1;
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d1 8
+@

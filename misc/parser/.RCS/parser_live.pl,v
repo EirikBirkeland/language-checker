@@ -1,0 +1,435 @@
+head	1.14;
+access;
+symbols;
+locks
+	eb:1.14; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.14
+date	2015.04.24.09.15.28;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.04.24.09.14.41;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.04.24.09.12.48;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.04.24.09.12.17;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.04.24.09.11.52;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.04.24.09.11.22;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.04.24.09.10.52;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.04.24.09.09.22;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.04.24.09.06.54;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.04.24.09.05.39;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.04.24.09.04.36;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.04.24.09.04.34;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.04.24.09.04.01;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.04.24.09.02.58;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.14
+log
+@vim
+@
+text
+@#use strict;
+#use warnings;
+#use utf8;
+use Data::Printer;
+use feature 'say';
+
+open( VERB,   "<:encoding(ISO-8859-15)", "verb.txt" );
+open( ADVERB, "<:encoding(ISO-8859-15)", "adv.txt" );
+open( NOUN,   "<:encoding(ISO-8859-15)", "subst.txt" );
+open( ADJ,    "<:encoding(ISO-8859-15)", "adj.txt" );
+open( PRON,   "<:encoding(ISO-8859-15)", "pron.txt" );
+open( DET,    "<:encoding(ISO-8859-15)", "det.txt" );
+open( PREP,   "<:encoding(ISO-8859-15)", "prep.txt" );
+
+my @@verbs   = <VERB>;
+my @@adverbs = <ADVERB>;
+my @@nouns   = <NOUN>;
+my @@adj     = <ADJ>;
+my @@pron    = <PRON>;
+my @@det     = <DET>;
+my @@prep    = <PREP>;
+
+close( VERB, ADVERB, NOUN, ADJ, PRON, DET, PREP );
+chomp( @@verbs, @@adverbs, @@nouns, @@adj, @@pron, @@det, @@prep );
+
+( $verbs, $adverbs, $nouns, $adj, $pron, $det, $prep ) =
+  ( @@adverbs, @@nouns, @@adj, @@pron, @@det, @@prep );
+
+$verbs = @@verbs;
+say "There are $verbs verbs";
+$adverbs = @@adverbs;
+say "There are $adverbs adverbs";
+$nouns = @@nouns;
+say "There are $nouns nouns";
+$adj = @@adj;
+say "There are $adj adjectives";
+$pron = @@pron;
+say "There are $pron pronouns";
+$det = @@det;
+say "There are $det determiners";
+$prep = @@prep;
+say "There are $prep prepositions";
+
+%verbs   = map { $_ => 1 } @@verbs;
+%nouns   = map { $_ => 1 } @@nouns;
+%adverbs = map { $_ => 1 } @@adverbs;
+%adj     = map { $_ => 1 } @@adj;
+%pron    = map { $_ => 1 } @@pron;
+%det     = map { $_ => 1 } @@det;
+%prep    = map { $_ => 1 } @@prep;
+
+while (1) {
+    say "Please input string: ";
+    chomp ($input = <>);
+    $input =~ s/^([\w])/\l$1\E/i;
+    say $input;
+    @@input = split (" ", $input);
+    %results;
+    my $parsed;
+    my $i = 0;
+    foreach $word (@@input) {
+        say $word;
+        chomp $word;
+        if ( exists $det{$word} ) {
+            say "'$word' is a determiner.\n";
+            $results{$i} = "determiner";
+            $parsed .= "determiner ";
+        }
+        elsif ( exists $adverbs{$word} ) {
+            say "'$word' is an adverb.\n";
+            $results{$i} = "adverb";
+            $parsed .= "adverb ";
+        }
+        elsif ( exists $adj{$word} ) {
+            say "'$word' is an adjective.\n";
+            $results{$i} = "adj";
+            $parsed .= "adj ";
+        }
+        elsif ( exists $verbs{$word} ) {
+            say "'$word' is a verb.\n";
+            $results{$i} = "verb";
+            $parsed .= "verb ";
+        }
+        elsif ( exists $nouns{$word} ) {
+            say "'$word' is a noun.\n";
+            $results{$i} = "noun";
+            $parsed .= "noun ";
+        }
+        elsif ( exists $pron{$word} ) {
+            say "'$word' is a pronoun.\n";
+            $results{$i} = "pronoun";
+            $parsed .= "pronoun ";
+        }
+        elsif ( exists $prep{$word} ) {
+            say "'$word' is a preposition.\n";
+            $results{$i} = "pronoun";
+            $parsed .= "pronoun ";
+        }
+        elsif ( $word =~ /[A-ZÆØÅ][\w]+/ ) {
+            say "'$word' is a name.\n";
+            $results{$i} = "name";
+            $parsed .= "name ";
+        }
+        else { say "wtf.\n" }
+    }
+
+    my @@parsed = split( ' ', $parsed );
+    if ( $parsed =~ /adverb verb/ ) {
+        say "Illegal word order detected. 0012 will not like this.";
+
+        # One word has now been processed.
+        $i += 1;
+    }
+
+    if ( grep( /etter/, @@ARGV ) ) {
+
+    }
+
+    p %results;
+    say $parsed;
+    p @@parsed;
+}
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d66 2
+a67 2
+            $results{$i} = "pronoun";
+            $parsed .= "pronoun ";
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d55 1
+a55 1
+    $input =~ s/^([\w])/\U$1\E/i;
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d55 1
+a55 1
+    $input = $input =~ s/^([\wæøå])/\U$1\E/i;
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d55 1
+a55 1
+    $input =~ s/^([\wæøå])/\U$1\E/i;
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d55 1
+a55 1
+    $input = s/^([\wæøå])/\U$1\E/i;
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d56 1
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d55 1
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d93 1
+a93 1
+            say "'$word' is a determiner.\n";
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d14 1
+d22 1
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d52 2
+a53 1
+    $input = <>;
+d57 1
+a57 1
+    foreach $word ($input) {
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d51 49
+a99 12
+say "Please input string: ";
+$input = <>;
+%results;
+my $parsed;
+my $i = 0;
+foreach $word ($input) {
+    say $word;
+    chomp $word;
+    if ( exists $det{$word} ) {
+        say "'$word' is a determiner.\n";
+        $results{$i} = "pronoun";
+        $parsed .= "pronoun ";
+a100 37
+    elsif ( exists $adverbs{$word} ) {
+        say "'$word' is an adverb.\n";
+        $results{$i} = "adverb";
+        $parsed .= "adverb ";
+    }
+    elsif ( exists $adj{$word} ) {
+        say "'$word' is an adjective.\n";
+        $results{$i} = "adj";
+        $parsed .= "adj ";
+    }
+    elsif ( exists $verbs{$word} ) {
+        say "'$word' is a verb.\n";
+        $results{$i} = "verb";
+        $parsed .= "verb ";
+    }
+    elsif ( exists $nouns{$word} ) {
+        say "'$word' is a noun.\n";
+        $results{$i} = "noun";
+        $parsed .= "noun ";
+    }
+    elsif ( exists $pron{$word} ) {
+        say "'$word' is a pronoun.\n";
+        $results{$i} = "pronoun";
+        $parsed .= "pronoun ";
+    }
+    elsif ( exists $prep{$word} ) {
+        say "'$word' is a determiner.\n";
+        $results{$i} = "pronoun";
+        $parsed .= "pronoun ";
+    }
+    elsif ( $word =~ /[A-ZÆØÅ][\w]+/ ) {
+        say "'$word' is a name.\n";
+        $results{$i} = "name";
+        $parsed .= "name ";
+    }
+    else { say "wtf.\n" }
+}
+d102 3
+a104 3
+my @@parsed = split(' ', $parsed);
+if ( $parsed =~ /adverb verb/ ) {
+    say "Illegal word order detected. 0012 will not like this.";
+d106 3
+a108 3
+    # One word has now been processed.
+    $i += 1;
+}
+d110 1
+a110 2
+if ( grep( /etter/, @@ARGV ) ) {
+  
+d112 1
+a112 1
+}
+d114 3
+a116 3
+p %results;
+say $parsed;
+p @@parsed;
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d49 2
+d118 1
+a118 1
+p @@ARGV;
+@
+
+
+1.1
+log
+@vim
+@
+text
+@a6 4
+# Welcome to brute-force sentence parser. As of survey date, 10th of January, this looks like it could be simply added as a QA test.
+
+#my @@ARGV = split( / /, $string1 );
+p @@ARGV;
+d49 2
+a50 1
+
+d54 1
+a54 1
+foreach $word (@@ARGV) {
+@

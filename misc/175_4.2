@@ -1,0 +1,89 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Test output</title>
+  <link rel="stylesheet" 
+href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <!--<link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery-1.10.2.js"></script>
+  <script src="jquery-ui.js"></script>--> <style type="text/css">
+p {border: 2px solid black;padding:5px 5px 5px 5px}
+.source {bold}
+.target {bold}
+
+.wrong {color: black; background-color: ffb2b2}
+.suggest {color: black; background-color: b2ffb2}
+
+.adv_source {color: black; background-color: ffb2b2}
+.adv_target {color: black; background-color: b2ffb2} 
+
+.type {font-size: 75%}
+.desc {font-size: 75%}
+.error {color: blue;}
+
+.container {
+    width:100%;
+    border:1px solid #d3d3d3;
+}
+.container div {
+    width:100%;
+}
+.container .header {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container .content {
+    display: none;
+    padding : 5px;
+}
+</style>
+<script> $(function() {
+$( "#accordion" ).accordion({
+      collapsible: true,
+      heightStyle: "content"
+});
+});
+</script>
+</head>
+<body>
+<div id="accordion">
+
+<h3>Simple</h3>
+<div>
+<p><SPAN CLASS='target'>Med virtuell IP for Sikkert Søk får alle brukerne på nettverket <SPAN CLASS='wrong'>kun</SPAN> tilgang til å bruke Sikkert Søk i Google Søk, og samtidig gir denne løsningen en sikker forbindelse via HTTPS. Virtuell IP er en IP-adresse som kan rutes internt til flere Google-tjenere.</SPAN><br><SPAN CLASS='wrong'>kun\b</SPAN> -> <SPAN CLASS='suggest'>bare</SPAN></p>
+<p><SPAN CLASS='target'>En ny rapport har blitt generert for deg av REPORT_OWNER. Åpne rapporten i Google Disk på DRIVE_LINK, eller følg linken nedenfor for å vise rapporten. Rapporten er også tilgjengelig når du logger på PRODUCT_NAME.</SPAN>
+REPORT_<SPAN CLASS='wrong'>URL</SPAN><br><SPAN CLASS='wrong'>URL</SPAN> -> <SPAN CLASS='suggest'>nettadresse</SPAN></p>
+<p><SPAN CLASS='target'>Søk i bestillingslisten din og finn bestillingen <SPAN CLASS='wrong'>du ønsker å</SPAN> spore.</SPAN><br><SPAN CLASS='wrong'>du ønsker å\b</SPAN> -> <SPAN CLASS='suggest'>du vil</SPAN></p>
+<p><SPAN CLASS='target'>Hvis en bruker ikke ser eller ikke kan laste ned appen <SPAN CLASS='wrong'>ved hjelp av</SPAN>  Play Butikk-appen, må du kontrollere at appen din er tilgjengelig i brukerens land og kompatibel med enheten som brukes.</SPAN><br><SPAN CLASS='wrong'>ved hjelp av</SPAN> -> <SPAN CLASS='suggest'>med</SPAN></p>
+<p><SPAN CLASS='target'>Denne lisensen gis utelukkende for at du skal <SPAN CLASS='wrong'>være i stand til å</SPAN> bruke og dra nytte av programvaren som Google tilbyr, i overensstemmelse med vilkårene.</SPAN><br><SPAN CLASS='wrong'>være i stand til å?</SPAN> -> <SPAN CLASS='suggest'>kan</SPAN></p>
+<p><SPAN CLASS='target'>Siden du <SPAN CLASS='wrong'>gav</SPAN> oss en kopi av kvitteringen for Google Play-gavekortet, har vi denne gangen gjort et unntak og overført beløpet til kontoen din.</SPAN><br><SPAN CLASS='wrong'>gav\b</SPAN> -> <SPAN CLASS='suggest'>ga</SPAN></p>
+<p><SPAN CLASS='target'>Alle dataene lagret på Google-kontoen din gjenopprettes,<SPAN CLASS='wrong'>  men</SPAN> appene og deres tilknyttede data avinstalleres.</SPAN><br><SPAN CLASS='wrong'>[^,;–] men\b</SPAN> -> <SPAN CLASS='suggest'>, men</SPAN></p>
+<p><SPAN CLASS='target'>Du kan også sveipe ned fra øverst til høyre på et hvilket som helst <SPAN CLASS='wrong'>skjermbilde</SPAN> for å åpne <strong>Hurtiginnstillinger</strong> <gkms:snippet contenteditable="false" id="2840746"></gkms:snippet>, og trykk på brukerbildet.</SPAN><br><SPAN CLASS='wrong'>skjermbilde</SPAN> -> <SPAN CLASS='suggest'>skjermdump</SPAN></p>
+<p><SPAN CLASS='target'>Samarbeid <SPAN CLASS='wrong'>på tvers av </SPAN>bydeler, byer og land er nødvendig for å oppnå den ultimate seieren.</SPAN><br><SPAN CLASS='wrong'>på tvers av (?:enheter)*</SPAN> -> <SPAN CLASS='suggest'>mellom *eller* ulike *eller* på (enheter)</SPAN></p>
+<p><SPAN CLASS='target'>Har du kanskje en som er knyttet til en annen <SPAN CLASS='wrong'>e-post-adresse</SPAN> eller bedrifts-e-postadresse?</SPAN><br><SPAN CLASS='wrong'>e-post-adresse</SPAN> -> <SPAN CLASS='suggest'>e-postadresse</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Aktiver</SPAN> ditt liv nå. Indefinite Chrome nightmare aperture. For å installere, må du trykke på knappen. Logg deg inn gratis.</SPAN><br><SPAN CLASS='wrong'>Aktiver\b</SPAN> -> <SPAN CLASS='suggest'>Aktivér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Kontroller</SPAN> batterinivået og forbruksdataene på enheten for å fastslå om noen ubrukte funksjoner eller installerte tredjepartsapper gjør at batteriet tømmes raskt.</SPAN><br><SPAN CLASS='wrong'>Kontroller\b</SPAN> -> <SPAN CLASS='suggest'>Kontrollér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Eksporter</SPAN> brukerordlisten din til:</SPAN><br><SPAN CLASS='wrong'>Eksporter\b</SPAN> -> <SPAN CLASS='suggest'>Eksportér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Kopier</SPAN> og lim inn den angitte kodebiten i lt;headgt;-tagen på nettstedet ditt, og klikk på knappen Test nettstedet.</SPAN><br><SPAN CLASS='wrong'>Kopier\b</SPAN> -> <SPAN CLASS='suggest'>Kopiér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Sorter</SPAN> listen etter</SPAN><br><SPAN CLASS='wrong'>Sorter\b</SPAN> -> <SPAN CLASS='suggest'>Sortér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Rapporter</SPAN> en feil</SPAN><br><SPAN CLASS='wrong'>^Rapporter\b</SPAN> -> <SPAN CLASS='suggest'>Rapportér</SPAN></p>
+<p><SPAN CLASS='target'>Zip-filer kan åpnes på nesten alle datamaskiner. <SPAN CLASS='wrong'>Arkiver</SPAN> større enn 2 GB deles inn i flere .zip-filer.</SPAN><br><SPAN CLASS='wrong'>Arkiver\b</SPAN> -> <SPAN CLASS='suggest'>Arkivér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Sorter</SPAN> listen etter</SPAN><br><SPAN CLASS='wrong'>Sorter\b</SPAN> -> <SPAN CLASS='suggest'>Sortér</SPAN></p>
+<p><SPAN CLASS='target'><SPAN CLASS='wrong'>Blokker</SPAN> et anrop</SPAN><br><SPAN CLASS='wrong'>Blokker\b</SPAN> -> <SPAN CLASS='suggest'>Blokkér</SPAN></p>
+<p><SPAN CLASS='target'>TAG_BBidra til å forbedre Android-opplevelsen dinCLOSE_B, batteriytelse, Play Store rangeringer og mer ved å automatisk sende diagnostikk- og bruksdata om denne enheten til Google. TAG_ANNOTATION<SPAN CLASS='wrong'>Lær mer</SPAN>.CLOSE_ANNOTATION</SPAN><br><SPAN CLASS='wrong'>(?:Lær|Les) mer</SPAN> -> <SPAN CLASS='suggest'>Finn ut mer</SPAN></p>
+<p><SPAN CLASS='target'>Taleinndata er en eksperimentell funksjon som bruker Googles nettverksbaserte talegjenkjenning. Den bruker ekstra nettverkstrafikk. Vi jobber med å forbedre funksjonen.BREAK_0BREAK_1Følgende personvernregler gjelder:BREAK_2http://www.google.com<SPAN CLASS='wrong'>/intl/en/</SPAN>policies/privacyBREAK_3BREAK_4Vil du bruke taleinndata?</SPAN><br><SPAN CLASS='wrong'>hl=en|\/intl\/en\/</SPAN> -> <SPAN CLASS='suggest'>"hl=no" *eller* "/intl/no"</SPAN></p>
+<p><SPAN CLASS='target'>Bruk av virtuell IP for Sikkert Søk VIP <SPAN CLASS='wrong'>berøre</SPAN>r ikke andre Google-tjenester utenfor Google Søk.</SPAN><br><SPAN CLASS='wrong'>berøre?</SPAN> -> <SPAN CLASS='suggest'>trykk(e)</SPAN></p>
+<p><SPAN CLASS='target'>En mystisk energi <SPAN CLASS='wrong'>har blitt</SPAN> avdekket av et forskerteam i Europa.</SPAN><br><SPAN CLASS='wrong'>har blitt</SPAN> -> <SPAN CLASS='suggest'>er blitt</SPAN></p>
+<p><SPAN CLASS='target'>Når du slår på automatisk sikkerhetskopiering, lagres enhetens data jevnlig i Google-kontoen din. Sikkerhetskopier kan inneholde informasjon i appdata-mappene dine sånn som <SPAN CLASS='wrong'>preferanser</SPAN>, innstillinger, meldinger, bilder og andre filer.</SPAN><br><SPAN CLASS='wrong'>preferanser</SPAN> -> <SPAN CLASS='suggest'>innstillinger</SPAN></p>
+<p><SPAN CLASS='target'>Klikk på Rediger <SPAN CLASS='wrong'>øverst i høyre hjørne</SPAN> på skjermen.</SPAN><br><SPAN CLASS='wrong'>øverst i høyre hjørne</SPAN> -> <SPAN CLASS='suggest'>oppe til høyre *eller* i øverste høyre hjørne</SPAN></p>
+<p><SPAN CLASS='target'>Med <SPAN CLASS='wrong'>Google Play Filmer og TV</SPAN><gkms:snippet contenteditable="false" id="3184878"> </gkms:snippet>, kan du se det du elsker uansett hvor du er.</SPAN><br><SPAN CLASS='wrong'>Google Play Filmer og TV</SPAN> -> <SPAN CLASS='suggest'>Google Play Filmer</SPAN></p>
+<p><SPAN CLASS='target'>Sletting av Google Wallet fra Google-kontoen avslutter bruken din av tjenesten og betyr at du ikke lenger kan logge deg på Google Wallet. Hvis du noen gang ønsker å gjenoppta tjenesten, må du gjenåpne kontoen din, og du må <SPAN CLASS='wrong'>akseptere</SPAN> vilkårene for bruk.</SPAN><br><SPAN CLASS='wrong'>akseptere?</SPAN> -> <SPAN CLASS='suggest'>godta</SPAN></p>
+<p><SPAN CLASS='target'>Send en e-post til deg selv eller opprett et notat ved hjelp av Android-apper, <SPAN CLASS='wrong'>som for eksempel</SPAN> Google Keep eller Evernote.</SPAN><br><SPAN CLASS='wrong'>som for eksempel</SPAN> -> <SPAN CLASS='suggest'>for eksempel</SPAN></p>
+<p><SPAN CLASS='target'>Brukernavn: (<SPAN CLASS='wrong'>f.eks.</SPAN> olanordmann@gmail.com)</SPAN><br><SPAN CLASS='wrong'>f\.eks\.</SPAN> -> <SPAN CLASS='suggest'>for eksempel</SPAN></p>
+<p><SPAN CLASS='target'>Bruk av virtuell IP for Sikkert Søk VIP <SPAN CLASS='wrong'>berører</SPAN> ikke andre Google-tjenester utenfor Google Søk.</SPAN><br><SPAN CLASS='wrong'>berører?|berøring</SPAN> -> <SPAN CLASS='suggest'>trykk(e)(r)</SPAN></p>
+<p><SPAN CLASS='target'>Berør <SPAN CLASS='wrong'>varsling</SPAN>s, følger du disse trinnene:</SPAN><br><SPAN CLASS='wrong'>varsling(?:er)?</SPAN> -> <SPAN CLASS='suggest'>varsel/varsler</SPAN></p>
+<p><SPAN CLASS='target'>For fullstendig informasjon om FOS, kan du <SPAN CLASS='wrong'>besøke</SPAN> <a href="http://www.financial-ombudsman.org.uk">www.financial-ombudsman.org.uk</a>.</SPAN><br><SPAN CLASS='wrong'>besøke?</SPAN> -> <SPAN CLASS='suggest'>gå til (nettsted)</SPAN></p>

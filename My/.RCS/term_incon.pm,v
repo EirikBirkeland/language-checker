@@ -1,0 +1,1707 @@
+head	1.92;
+access;
+symbols;
+locks
+	eb:1.92; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.92
+date	2015.02.06.13.34.48;	author eb;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2015.02.06.13.34.46;	author eb;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2015.02.06.13.33.57;	author eb;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2015.02.06.13.33.30;	author eb;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2015.02.06.13.33.20;	author eb;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2015.02.02.08.53.01;	author eb;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2015.02.02.08.52.18;	author eb;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2015.02.02.08.51.52;	author eb;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2015.02.02.08.49.44;	author eb;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2015.02.02.08.49.14;	author eb;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2015.01.24.20.00.01;	author eb;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2015.01.24.19.58.01;	author eb;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2015.01.24.19.57.09;	author eb;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2015.01.24.19.56.08;	author eb;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2015.01.24.19.56.06;	author eb;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2015.01.24.19.49.33;	author eb;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2015.01.24.19.48.53;	author eb;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2015.01.24.19.47.44;	author eb;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2015.01.24.19.47.20;	author eb;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2015.01.24.19.46.50;	author eb;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2015.01.24.19.46.43;	author eb;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2015.01.24.19.45.33;	author eb;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2015.01.24.19.44.49;	author eb;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2015.01.24.19.44.16;	author eb;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2015.01.24.19.43.57;	author eb;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2015.01.24.19.43.33;	author eb;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2015.01.24.19.42.30;	author eb;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2015.01.24.19.42.15;	author eb;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2015.01.24.19.41.54;	author eb;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2015.01.24.19.37.41;	author eb;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2015.01.24.19.37.18;	author eb;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2015.01.24.19.36.56;	author eb;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2015.01.24.19.36.49;	author eb;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2015.01.24.19.36.47;	author eb;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2015.01.24.19.36.11;	author eb;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2015.01.24.19.35.00;	author eb;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2015.01.24.19.34.00;	author eb;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2015.01.24.19.33.11;	author eb;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2015.01.24.19.19.15;	author eb;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2015.01.24.19.17.37;	author eb;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2015.01.24.19.16.34;	author eb;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2015.01.24.19.16.01;	author eb;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2015.01.24.19.15.15;	author eb;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2015.01.24.19.13.46;	author eb;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2015.01.24.19.04.48;	author eb;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2015.01.24.19.04.32;	author eb;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2015.01.24.19.04.27;	author eb;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2015.01.14.13.20.21;	author eb;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2015.01.14.09.00.43;	author eb;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2015.01.14.09.00.29;	author eb;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2015.01.14.09.00.13;	author eb;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2015.01.14.08.59.08;	author eb;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2015.01.14.08.57.47;	author eb;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2015.01.14.08.57.26;	author eb;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.01.14.08.57.24;	author eb;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.01.14.08.57.09;	author eb;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.01.14.08.57.02;	author eb;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.01.14.08.56.27;	author eb;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.01.14.08.53.47;	author eb;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.01.14.08.52.27;	author eb;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.01.14.08.51.50;	author eb;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.01.14.08.51.24;	author eb;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.01.14.08.50.13;	author eb;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2015.01.14.08.49.42;	author eb;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.01.14.08.49.32;	author eb;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2015.01.14.08.49.31;	author eb;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2015.01.14.08.48.38;	author eb;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.01.14.08.47.06;	author eb;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.01.14.08.46.29;	author eb;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.01.14.08.46.09;	author eb;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.01.14.08.45.54;	author eb;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.01.14.08.45.54;	author eb;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.01.14.08.43.55;	author eb;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.01.14.08.39.14;	author eb;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.01.14.08.39.04;	author eb;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.01.14.08.38.55;	author eb;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.01.14.08.38.43;	author eb;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.01.14.08.38.40;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.01.14.08.38.05;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.01.14.08.37.34;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.01.14.08.33.05;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.01.14.08.32.32;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.01.14.08.32.17;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.01.14.08.32.10;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.01.14.08.31.21;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.01.14.08.28.58;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.01.14.08.28.50;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.01.14.08.28.36;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.14.08.27.52;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.14.08.27.45;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.14.08.27.31;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.14.08.26.50;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.92
+log
+@vim
+@
+text
+@use 5.20.1;
+
+sub term_incon {
+    my ( $source, $target, $results, $number ) = @@_;
+    my $target_merged = join '', @@$target;
+    my $tm = $target_merged;
+
+    open( RAW, "<", "/home/eb/projects/xml_parser/data/synonyms.txt" )
+      or die "Can't open synonyms.txt: $!";
+    my @@raw = <RAW>;
+    close RAW;
+
+    # Remove empty lines test
+    my @@synonyms;
+    foreach (@@raw) {
+        if ( ( defined $_ ) and !( $_ =~ /^\s*$/ ) ) {
+            push( @@synonyms, $_ );
+        }
+    }
+
+    my $index;
+    my $value;
+    foreach (@@synonyms) {
+        $index++;
+        $value = 0;
+        my @@field = split( '\t', $_ );
+        chomp @@field;
+        my ( $one, $two, $three );
+        if ( $tm =~ /($field[0])/ ) { $value++; $one = $1; }
+        if ( defined $field[1] && $tm =~ /($field[1])/ ) {
+            $value++;
+            $two = $1;
+        }
+        if ( defined $field[2] && $tm =~ /($field[2])/ ) {
+            $value++;
+            $three = $1;
+        }
+        if ( !defined $three ) { $three = " "; }
+        if ( $value >= 2 ) {
+            my $count_one   = () = $tm =~ /$one/g;
+            my $count_two   = () = $tm =~ /$two/g;
+            my $count_three = () = $tm =~ /$three/g;
+            $$results{ALL_TEXT}{"test$index"}{$one}   = $count_one;
+            $$results{ALL_TEXT}{"test$index"}{$two}   = $count_two;
+            $$results{ALL_TEXT}{"test$index"}{$three} = $count_three;
+
+        }
+    }
+}
+1;
+@
+
+
+1.91
+log
+@vim
+@
+text
+@d30 1
+a30 1
+        if ( defined $field[1]  && $tm =~ /($field[1])/ ) {
+@
+
+
+1.90
+log
+@vim
+@
+text
+@d30 1
+a30 1
+        if ( ( defined $field[1] ) && ( $tm =~ /($field[1])/ ) ) {
+@
+
+
+1.89
+log
+@vim
+@
+text
+@d30 1
+a30 1
+        if ( ( defined field [1] ) && ( $tm =~ /($field[1])/ ) ) {
+@
+
+
+1.88
+log
+@vim
+@
+text
+@d8 2
+a9 1
+    open( RAW, "<", "/home/eb/projects/xml_parser/data/synonyms.txt" ) or die "Can't open synonyms.txt: $!";
+d30 4
+a33 1
+        if (( defined field[1]) && ($tm =~ /($field[1])/ )) { $value++; $two = $1; }
+@
+
+
+1.87
+log
+@vim
+@
+text
+@d29 1
+a29 1
+        if ( $tm =~ /($field[1])/ ) { $value++; $two = $1; }
+@
+
+
+1.86
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    open( RAW, "<", "/home/eb/projects/xml_parser/tests/synonyms.txt" ) or die "Can't open synonyms.txt: $!";
+@
+
+
+1.85
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    open( RAW, "<", "/home/eb/projects/xml_parser/tests/synonyms.txt" ) or die "Can't open '$seq': $!";
+@
+
+
+1.84
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    open( RAW, "<", "tests/synonyms.txt" );
+@
+
+
+1.83
+log
+@vim
+@
+text
+@d8 3
+a10 3
+    open( my @@raw, "<", "tests/synonyms.txt" );
+#    my @@raw = <FH>;
+    close FH;
+@
+
+
+1.82
+log
+@vim
+@
+text
+@d8 2
+a9 2
+    open( FH, "<", "tests/synonyms.txt" );
+    my @@raw = <FH>;
+@
+
+
+1.81
+log
+@vim
+@
+text
+@d39 3
+a41 3
+            $$results{ALL_TEXT}{"line$index"}{$one}   = $count_one;
+            $$results{ALL_TEXT}{"line$index"}{$two}   = $count_two;
+            $$results{ALL_TEXT}{"line$index"}{$three} = $count_three;
+@
+
+
+1.80
+log
+@vim
+@
+text
+@d36 3
+a38 3
+            my $count_one   = $tm =~ /$one/g;
+            my $count_two   = $tm =~ /$two/g;
+            my $count_three = $tm =~ /$three/g;
+@
+
+
+1.79
+log
+@vim
+@
+text
+@d37 2
+a38 2
+            my $count_two   = $tm =~ /$one/g;
+            my $count_three = $tm =~ /$one/g;
+@
+
+
+1.78
+log
+@vim
+@
+text
+@d34 1
+a34 1
+        if (!defined $three){$three = " ";}
+d36 6
+a41 6
+        my $count_one = $tm =~ /$one/g;
+       my $count_two = $tm =~ /$one/g;
+ my $count_three = $tm =~ /$one/g;
+$$results{ALL_TEXT}{"line$index"}{$one} = $count_one;        
+$$results{ALL_TEXT}{"line$index"}{$two} = $count_two;        
+$$results{ALL_TEXT}{"line$index"}{$three} = $count_three;        
+d43 1
+a43 1
+}
+@
+
+
+1.77
+log
+@vim
+@
+text
+@d36 8
+a43 2
+            $$results{ALL_TEXT}{"line$index"} = "$one, $two, $three";
+        }
+@
+
+
+1.76
+log
+@vim
+@
+text
+@d20 2
+a21 2
+my $index;
+my $value;
+d23 2
+a24 2
+$index++;
+$value = 0;        
+d28 7
+a34 4
+        if ( $tm =~ /($field[0])/ ) { $value++; $one   = $1; }
+        if ( $tm =~ /($field[1])/ ) { $value++; $two   = $1; }
+        if ( defined $field[2] &&  $tm =~ /($field[2])/ ) { $value++; $three = $1 }
+$three = " ";
+d36 1
+a36 1
+            $$results{ALL_TEXT}{"line$index"} = "$one, $two, $three"; 
+@
+
+
+1.75
+log
+@vim
+@
+text
+@a19 1
+my ( $one, $two, $three ) = 1;
+d27 1
+a27 1
+        my ( $one, $two, $three ) = "z ";
+d31 1
+a31 1
+
+@
+
+
+1.74
+log
+@vim
+@
+text
+@d28 1
+a28 1
+        my ( $one, $two, $three ) = " ";
+@
+
+
+1.73
+log
+@vim
+@
+text
+@d28 1
+@
+
+
+1.72
+log
+@vim
+@
+text
+@a27 1
+        my ( $one, $two, $three );
+@
+
+
+1.71
+log
+@vim
+@
+text
+@d20 1
+a20 1
+
+@
+
+
+1.70
+log
+@vim
+@
+text
+@d31 1
+a31 1
+        if ( $tm =~ /($field[2])/ ) { $value++; $three = $1 }
+@
+
+
+1.69
+log
+@vim
+@
+text
+@a25 1
+say "One line: $_";
+a31 1
+        say $value;
+@
+
+
+1.68
+log
+@vim
+@
+text
+@d36 1
+a36 1
+            $$results{ALL_TEXT}{line$index} = "$one, $two, $three"; 
+@
+
+
+1.67
+log
+@vim
+@
+text
+@a35 1
+            say
+@
+
+
+1.66
+log
+@vim
+@
+text
+@d22 1
+d25 2
+a26 1
+        say "One line: $_";
+a27 1
+        say "Field[1]: $field[1]";
+a29 1
+        my $value = 0;
+@
+
+
+1.65
+log
+@vim
+@
+text
+@d37 1
+a37 1
+            $$result{ALL_TEXT}{line$index} = "$one, $two, $three"; 
+@
+
+
+1.64
+log
+@vim
+@
+text
+@d37 1
+a37 1
+            $$result{ALL_TEXT}{line$index} = $one, $two, $three; 
+@
+
+
+1.63
+log
+@vim
+@
+text
+@d20 2
+d23 1
+d37 1
+a37 1
+              "omg conflict: $one, $two, $three";
+@
+
+
+1.62
+log
+@vim
+@
+text
+@d34 1
+a34 1
+              "omg conflict: $one, $two, and $three";
+@
+
+
+1.61
+log
+@vim
+@
+text
+@d34 1
+a34 1
+              "omg conflict: field[0]: $one, field[1]: $two, field[2]: $three";
+@
+
+
+1.60
+log
+@vim
+@
+text
+@d27 3
+a29 3
+        if ( $tm =~ /($field[0])/ ) { $value++; $one = $1; }
+        if ( $tm =~ /($field[1])/ ) { $value++; $two = $1; }
+        if ( $tm =~ /($field[2])/ ) { $value++; $three = $11 }
+@
+
+
+1.59
+log
+@vim
+@
+text
+@d29 1
+a29 1
+        if ( $tm =~ /($field[2])/ ) { $value++; $three = $1; }
+@
+
+
+1.58
+log
+@vim
+@
+text
+@d28 2
+a29 3
+        if ( $tm =~ /($field[1])/ ) { $value++; $two = $2; }
+
+        # if ( $tm =~ /($field[2])/ ) { $value++; $three = $3; }
+@
+
+
+1.57
+log
+@vim
+@
+text
+@d23 1
+a23 1
+        say $field[ 0 .. 2 ];
+@
+
+
+1.56
+log
+@vim
+@
+text
+@d21 1
+a21 1
+say $_;
+d23 1
+a23 1
+say $field[0..2];
+d27 4
+a30 3
+        if ( $tm =~ /($field[0])/ ) { $value++; $one   = $1; }
+        if ( $tm =~ /($field[1])/ ) { $value++; $two   = $2; }
+       # if ( $tm =~ /($field[2])/ ) { $value++; $three = $3; }
+@
+
+
+1.55
+log
+@vim
+@
+text
+@d29 1
+a29 1
+        if ( $tm =~ /($field[2])/ ) { $value++; $three = $3; }
+@
+
+
+1.54
+log
+@vim
+@
+text
+@d26 1
+a26 1
+        my $value;
+@
+
+
+1.53
+log
+@vim
+@
+text
+@d29 1
+a29 1
+        if ( $tm =~ /($field[2])/ ) { $value++; $three = $3 }
+@
+
+
+1.52
+log
+@vim
+@
+text
+@d21 1
+@
+
+
+1.51
+log
+@vim
+@
+text
+@d22 1
+d24 1
+a24 1
+my ($one, $two, $three);
+d26 8
+a33 6
+       if ( $tm =~ /($field[0])/ ){$value++; $one = $1;}
+       if ( $tm =~ /($field[1])/ ){$value++; $two = $2;}
+       if ( $tm =~ /($field[2])/ ){$value++; $three = $3}
+say $value;       
+ if ( $value >= 2 ) {
+            say "omg conflict: field[0]: $one, field[1]: $two, field[2]: $three";
+@
+
+
+1.50
+log
+@vim
+@
+text
+@d28 2
+a29 1
+        if ( $value >= 2 ) {
+@
+
+
+1.49
+log
+@vim
+@
+text
+@d23 1
+a23 1
+
+d25 3
+a27 3
+       if ( $tm =~ /($field[0])/ ){$value++}
+       if ( $tm =~ /($field[1])/ ){$value++}
+       if ( $tm =~ /($field[2])/ ){$value++}
+d29 1
+a29 1
+            say "omg conflict: field[0]: $1, field[1]: $2, field[2]: $3";
+@
+
+
+1.48
+log
+@vim
+@
+text
+@d25 3
+a27 3
+        $value++ if ( $tm =~ /($field[0])/ );
+        $value++ if ( $tm =~ /($field[1])/ );
+        $value++ if ( $tm =~ /($field[2])/ );
+@
+
+
+1.47
+log
+@vim
+@
+text
+@d23 2
+a24 1
+my $value;
+d27 2
+a28 2
+        $value++ if ( $tm =~ /($field[2])/ ); 
+       if ($value >= 2) {
+@
+
+
+1.46
+log
+@vim
+@
+text
+@d27 1
+a27 1
+       if $value >= 2 {
+@
+
+
+1.45
+log
+@vim
+@
+text
+@d23 6
+a28 4
+        if (   ( $tm =~ /($field[0])/ )
+            && ( ( $tm =~ /($field[1])/ ) || ( $tm =~ /($field[2])/ ) ) )
+        {
+            say "omg conflict, $1, $2, $3 .";
+@
+
+
+1.44
+log
+@vim
+@
+text
+@d22 1
+a22 1
+chomp @@field;
+@
+
+
+1.43
+log
+@vim
+@
+text
+@d21 3
+a23 4
+chomp;
+       my @@field = split( '\t', $_ );
+        
+if (   ( $tm =~ /($field[0])/ )
+@
+
+
+1.42
+log
+@vim
+@
+text
+@d21 4
+a24 2
+       chomp my @@field = split( '\t', $_ );
+        if (   ( $tm =~ /($field[0])/ )
+@
+
+
+1.41
+log
+@vim
+@
+text
+@d21 1
+a21 1
+        my @@field = split( '\t', $_ );
+@
+
+
+1.40
+log
+@vim
+@
+text
+@d22 5
+a26 4
+        if (( $tm =~ /$field[0]/ )
+          && ( ( $tm =~ /$field[1]/ ) || ( $tm =~ /$field[2]/ ) )){
+            say "omg conflict: $field[0], $field[1], $field[2].";
+          };
+@
+
+
+1.39
+log
+@vim
+@
+text
+@a20 1
+## Please see file perltidy.ERR
+d22 2
+a23 2
+        if ( $tm =~ /$field[0]/ )
+          && ( ( $tm =~ /$field[1]/ ) || ( $tm =~ /$field[2]/ ) ){
+@
+
+
+1.38
+log
+@vim
+@
+text
+@d21 1
+d24 3
+a26 5
+          && ( ( $tm =~ /$field[1]/ ) || ( $tm =~ /$field[2]/ ) ) 
+{
+                say "omg conflict: $field[0], $field[1], $field[2].";
+            }
+        }
+d28 2
+a29 1
+    1;
+@
+
+
+1.37
+log
+@vim
+@
+text
+@d22 3
+a24 3
+        if ( $tm =~ /$field[0]/ ) && (
+            ( $tm =~ /$field[1]/ ) || ( $tm =~ /$field[2]/ )) y
+
+d26 1
+a26 1
+            };
+@
+
+
+1.36
+log
+@vim
+@
+text
+@d23 1
+a23 1
+            ( $tm =~ /$field[1]/ ) || ( $tm =~ /$field[2]/ )) {
+@
+
+
+1.35
+log
+@vim
+@
+text
+@d6 1
+a6 1
+my $tm = $target_merged;
+d21 3
+a23 2
+my @@field = split ('\t', $_);
+if ($tm =~ /$field[0]/) && (($tm =~ /$field[1]/) || ($tm =~ /$field[2]/) {
+d25 3
+a27 2
+say "omg conflict: $field[0], $field[1], $field[2].";
+}
+d29 1
+a29 2
+}
+1;
+@
+
+
+1.34
+log
+@vim
+@
+text
+@d6 1
+d22 1
+d24 2
+@
+
+
+1.33
+log
+@vim
+@
+text
+@d4 2
+d18 1
+a18 1
+    
+d20 1
+a20 2
+
+        say;
+a22 2
+    my ( $source, $target, $results, $number ) = @@_;
+    my $target_merged = join '', @@$target;
+@
+
+
+1.32
+log
+@vim
+@
+text
+@d9 2
+a10 2
+# Remove empty lines test
+my @@synonyms;
+d13 1
+a13 1
+            push(@@synonyms, $_ );
+d16 2
+d19 1
+a19 1
+foreach(@@synonyms){
+d21 2
+a22 4
+say;
+
+}
+my ( $source, $target, $results, $number ) = @@_;
+@
+
+
+1.31
+log
+@vim
+@
+text
+@d10 1
+d13 1
+a13 1
+            push( my @@synonyms, $_ );
+@
+
+
+1.30
+log
+@vim
+@
+text
+@d9 1
+d15 7
+a21 1
+    my ( $source, $target, $results, $number ) = @@_;
+@
+
+
+1.29
+log
+@vim
+@
+text
+@d10 1
+a10 1
+        if ( ( defined $_ ) and !( $_ =~ /^$/ ) ) {
+@
+
+
+1.28
+log
+@vim
+@
+text
+@a16 3
+## Please see file perltidy.ERR
+## Please see file perltidy.ERR
+}
+@
+
+
+1.27
+log
+@vim
+@
+text
+@d14 2
+a15 2
+my ( $source, $target, $results, $number ) = @@_;
+my $target_merged = join '', @@$target;
+d17 1
+@
+
+
+1.26
+log
+@vim
+@
+text
+@d6 1
+a6 1
+    my @@synonyms = <FH>;
+d9 4
+a12 3
+foreach(@@plain){
+    if( ( defined $_) and !($_ =~ /^$/ )){
+        push(@@new, $_);
+d14 2
+d17 1
+a17 8
+}
+    
+foreach (@@synonyms) {
+        say $_;
+    }
+    my ( $source, $target, $results, $number ) = @@_;
+    my $target_merged = join '', @@$target;
+
+@
+
+
+1.25
+log
+@vim
+@
+text
+@d8 9
+a16 2
+    @@synonyms = grep { $_ eq '' } @@synonyms; #remove blank lines... works?
+    foreach (@@synonyms) {
+@
+
+
+1.24
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    @@synonyms = grep { $_ ne '' } @@synonyms; #remove blank lines... works?
+@
+
+
+1.23
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    @@synonyms = grep { $_ ne '' } @@synonyms;
+@
+
+
+1.22
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    @@synonyms = grep { $_ ne '' } @@array;
+@
+
+
+1.21
+log
+@vim
+@
+text
+@d8 1
+a8 1
+@@synonyms = grep { $_ ne '' } @@array;
+@
+
+
+1.20
+log
+@vim
+@
+text
+@d8 1
+a8 1
+
+@
+
+
+1.19
+log
+@vim
+@
+text
+@d9 1
+a9 1
+    while $_ in (@@synonyms) {
+@
+
+
+1.18
+log
+@vim
+@
+text
+@d9 1
+a9 1
+    while (@@synonyms) {
+@
+
+
+1.17
+log
+@vim
+@
+text
+@d9 2
+a10 2
+    while $_ in (@@synonyms) {
+        say;
+@
+
+
+1.16
+log
+@vim
+@
+text
+@d9 1
+a9 1
+    while (@@synonyms) {
+@
+
+
+1.15
+log
+@vim
+@
+text
+@d6 2
+a7 2
+my @@synonyms = <FH>;close FH;
+    
+d9 1
+a9 1
+while (@@synonyms) {
+@
+
+
+1.14
+log
+@vim
+@
+text
+@d5 5
+a9 2
+    open( my @@synonyms, "<", "tests/synonyms.txt" );
+    while (@@synonyms) {
+@
+
+
+1.13
+log
+@vim
+@
+text
+@a8 1
+    say $synonyms;
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d2 1
+d5 7
+a11 9
+open ( my $synonyms, "<", "tests/synonyms.txt");
+while($synonyms) {
+say;
+}
+say $synonyms;
+my ($source, $target, $results, $number) = @@_;
+my $target_merged = join '', @@$target;
+
+
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d5 2
+a6 2
+for my $i($$synonyms) {
+say $i;
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d5 1
+a5 1
+for my $i($synonyms) {
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d5 1
+a5 1
+for $i($synonyms) {
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d5 3
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d4 2
+d7 3
+a9 4
+my $str = join '', @@$target;
+say $str;
+# $flat = $$target;
+# print $target;
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d5 1
+a5 1
+my $str = join '', $$target;
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d5 1
+a5 1
+my $str = join '', $target;
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d5 2
+a6 2
+say $target;
+
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d11 1
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d1 1
+a10 1
+1;
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d10 1
+@

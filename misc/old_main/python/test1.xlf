@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xliff PUBLIC "-//XLIFF//DTD XLIFF//EN" "http://www.oasis-open.org/committees/xliff/documents/xliff.dtd">
+<xliff xmlns:ChrisXliff="urn:ChrisXliff:xliffeditor:xliff-extras:1.0" version="1.3">
+<file date="2010-01-04" source-language="en-us" target-language="" datatype="txt" original="Content extracted from GTT">
+<header>
+<tool tool-version="1.3" tool-name="TranflexToolbar" tool-id="http://www.tranflex.com">
+<ChrisXliff:sourceinfo>
+<ChrisXliff:source-encoding>utf-8</ChrisXliff:source-encoding>
+</ChrisXliff:sourceinfo>
+</tool>
+</header>
+<body>
+<trans-unit translate="yes" id="1">
+<source>Chrome, Chrome, Chrome.</source>
+<target state="translated">Chrome, Chrome. Google Butikk</target>
+</trans-unit>
+<trans-unit translate="yes" id="2">
+<source>Complaints Policy</source>
+<target state="translated">Retningslinjer for klager</target>
+</trans-unit>
+<trans-unit translate="yes" id="3">
+<source>Our complaints policy</source>
+<target state="translated">Retningslinjene våre for klager</target>
+</trans-unit>
+<trans-unit translate="yes" id="4">
+<source>Google is committed to providing a high standard of service at all times.</source>
+<target state="translated">Google har som mål å tilby tjenester med høy standard til enhver tid.</target>
+</trans-unit>
+<trans-unit translate="yes" id="5">
+<source>If we fall short of these standards, we want to hear from you.</source>
+<target state="translated">Hvis vi ikke strekker til i forhold til denne standarden, vil vi gjerne høre fra deg.</target>
+</trans-unit>
+<trans-unit translate="yes" id="6">
+<source>This policy outlined below applies to complaints against the Google Wallet service, as operated by Google Payment Ltd (GPL).</source>
+<target state="translated">Retningslinjene som forklares nedenfor, gjelder klager på Google Wallet-tjenesten, som drives av Google Payments Ltd (GPL).</target>
+</trans-unit>
+<trans-unit translate="yes" id="7">
+<source>It does not apply to complaints you may have with buyers or with sellers.</source>
+<target state="translated">Retningslinjene gjelder ikke for eventuelle klager som gjelder kjøpere eller selgere.</target>
+</trans-unit>
+<trans-unit translate="yes" id="8">
+<source>Under this policy, we will:</source>
+<target state="translated">I henhold til disse retningslinjene skal vi</target>
+</trans-unit>
+<trans-unit translate="yes" id="9">
+<source>Make it easy for you to issue your complaint</source>
+<target state="translated">gjøre det enkelt for deg å sende inn klager</target>
+</trans-unit>
+<trans-unit translate="yes" id="10">
+<source>Address your complaint in the shortest time possible</source>
+<target state="translated">behandle klagen din på kortest mulig tid</target>
+</trans-unit>
+<trans-unit translate="yes" id="11">
+<source>Ensure you are satisfied with how your complaint was handled</source>
+<target state="translated">sørge for at du er tilfreds med hvordan klagen ble behandlet</target>
+</trans-unit>
+<trans-unit translate="yes" id="12">
+<source>Issuing a complaint</source>
+<target state="translated">Innsending av klager</target>
+</trans-unit>
+<trans-unit translate="yes" id="13">
+<source>The most efficient way to issue a complaint is by completing our <bpt id="1">&lt;a </bpt>href="http://support.google.com/wallet/bin/request.py?contact_type=complainthl=en_GB<bpt id="2">"&gt;</bpt>online form<bpt id="3">&lt;/a&gt;</bpt>.</source>
+<target state="translated">Den mest effektive måten å sende inn en klage på, er å fylle ut <bpt id="1">&lt;a </bpt>href="http://checkout.google.com/support/bin/request.py?contact_type=complainthl=no<bpt id="2">"&gt;</bpt>nettskjemaet<bpt id="3">&lt;/a&gt;</bpt> vårt.</target>
+</trans-unit>
+<trans-unit translate="yes" id="14">
+<source>However, you can also contact us by post at:</source>
+<target state="translated">Du kan imidlertid også kontakte oss via post på den følgende adressen:</target>
+</trans-unit>
+<trans-unit translate="yes" id="15">
+<source>Google Wallet - Complaints</source>
+<target state="translated">Google Wallet – Complaints</target>
+</trans-unit>
+<trans-unit translate="yes" id="16">
+<source>Belgrave House</source>
+<target state="translated">Belgrave House</target>
+</trans-unit>
+<trans-unit translate="yes" id="17">
+<source>76 Buckingham Palace Road</source>
+<target state="translated">76 Buckingham Palace Road</target>
+</trans-unit>
+<trans-unit translate="yes" id="18">
+<source>London</source>
+<target state="translated">London</target>
+</trans-unit>
+<trans-unit translate="yes" id="19">
+<source>SW1W 9TQ</source>
+<target state="translated">SW1W 9TQ</target>
+</trans-unit>
+<trans-unit translate="yes" id="20">
+<source>U.K.</source>
+<target state="translated">U.K.</target>
+</trans-unit>
+<trans-unit translate="yes" id="21">
+<source>To help us review and resolve your complaint as swiftly as possible, please address the envelope exactly as written above and include the following:</source>
+<target state="translated">For å hjelpe oss å gjennomgå og avgjøre utfallet av klagen din fortest mulig, ber vi deg adressere konvolutten nøyaktig som beskrevet ovenfor, og inkludere denne informasjonen:</target>
+</trans-unit>
+<trans-unit translate="yes" id="22">
+<source>Your name</source>
+<target state="translated">navnet ditt</target>
+</trans-unit>
+<trans-unit translate="yes" id="23">
+<source>The email address you use to sign in to Google Wallet</source>
+<target state="translated">e-postadressen du logger på Google Wallet med</target>
+</trans-unit>
+<trans-unit translate="yes" id="24">
+<source>(Optional) The email address where you prefer to receive messages</source>
+<target state="translated">e-postadressen du foretrekker at vi kontakter deg via (valgfritt)</target>
+</trans-unit>
+<trans-unit translate="yes" id="25">
+<source>Your telephone number, including dialling code</source>
+<target state="translated">telefonnummeret ditt (inkludert retningsnummeret)</target>
+</trans-unit>
+<trans-unit translate="yes" id="26">
+<source>Your Google Wallet ID (sellers only)</source>
+<target state="translated">Google Wallet ID-en din (gjelder bare for selgere)</target>
+</trans-unit>
+<trans-unit translate="yes" id="27">
+<source>A clear description of your complaint</source>
+<target state="translated">en tydelig beskrivelse av klagen din</target>
+</trans-unit>
+<trans-unit translate="yes" id="28">
+<source>Your status as either a private individual or representative of an organisation (please state whether your organisation has a revenue of over £1m/€1m per annum)</source>
+<target state="translated">hvorvidt du har status som privatperson eller handler på vegne av en organisasjon. (I tilfelle sistnevnte, ber vi deg angi om organisasjonen har en omsetning over eller under en sum som tilsvarer 1 million GBP/EUR per år.)</target>
+</trans-unit>
+<trans-unit translate="yes" id="29">
+<source>Response time</source>
+<target state="translated">Svartid</target>
+</trans-unit>
+<trans-unit translate="yes" id="30">
+<source>We will endeavour to confirm receipt of your complaint within one business day of receiving your complaint and endeavour to respond to your complaint within five working days.</source>
+<target state="translated">Vi prøver å bekrefte mottak av klagen din innen én virkedag etter at vi mottar den, og vi forsøker å gi deg svar på klagen innen fem virkedager.</target>
+</trans-unit>
+<trans-unit translate="yes" id="31">
+<source>In our response, we will tell you:</source>
+<target state="translated">I svaret vårt forklarer vi</target>
+</trans-unit>
+<trans-unit translate="yes" id="32">
+<source>How your complaint has been addressed, or why it could not be addressed yet.</source>
+<target state="translated">hvordan klagen er blitt behandlet, eller evt. hvorfor vi ennå ikke har behandlet den</target>
+</trans-unit>
+<trans-unit translate="yes" id="33">
+<source>What happens next.</source>
+<target state="translated">hva som skjer videre</target>
+</trans-unit>
+<trans-unit translate="yes" id="34">
+<source>Complex situations may take longer to resolve.</source>
+<target state="translated">Hvis klagens saksforhold er kompliserte, kan det ta lengre tid å behandle den.</target>
+</trans-unit>
+<trans-unit translate="yes" id="35">
+<source>In certain cases, a resolution may take up to eight weeks from the date we received your complaint.</source>
+<target state="translated">I noen tilfeller kan det ta opptil åtte uker fra tidspunktet vi mottok klagen frem til saken er ferdigbehandlet.</target>
+</trans-unit>
+<trans-unit translate="yes" id="36">
+<source>If this is the case, we will provide you with a status update within four weeks.</source>
+<target state="translated">Hvis dette skulle forekomme, sender vi deg en statusoppdatering innen fire uker.</target>
+</trans-unit>
+<trans-unit translate="yes" id="37">
+<source>Escalating complaints</source>
+<target state="translated">Videresending av klager</target>
+</trans-unit>
+<trans-unit translate="yes" id="38">
+<source>Our aim is to resolve your complaint quickly and completely.</source>
+<target state="translated">Vi har til hensikt å avgjøre utfallet av klagen din raskt og grundig.</target>
+</trans-unit>
+<trans-unit translate="yes" id="39">
+<source>If for any reason you are not satisfied by our response, your case can be reviewed at a higher level.</source>
+<target state="translated">Hvis du av en eller annen grunn ikke er fornøyd med svaret du har mottatt, kan saken gjennomgås på et høyere nivå.</target>
+</trans-unit>
+<trans-unit translate="yes" id="40">
+<source>Simply ask the Wallet specialist handling your complaint to escalate the complaint for you.</source>
+<target state="translated">Du trenger bare be Wallet-spesialisten som behandler klagen din, om å sende klagen videre til en høyere instans.</target>
+</trans-unit>
+<trans-unit translate="yes" id="41">
+<source>The escalation of your complaint will be acknowledged within five working days.</source>
+<target state="translated">Videresendingen av klagen din bekreftes innen fem virkedager.</target>
+</trans-unit>
+<trans-unit translate="yes" id="42">
+<source>Financial Ombudsman Service</source>
+<target state="translated">Financial Ombudsman Service (finansombudsmannstjeneste)</target>
+</trans-unit>
+<trans-unit translate="yes" id="43">
+<source>Google Payment Ltd. is a member of the Financial Ombudsman Service (FOS), which was set up by the Financial Conduct Authority (FCA) in the UK as an independent dispute resolution scheme for financial services.</source>
+<target state="translated">Google Payment Ltd. er medlem av Financial Ombudsman Service (FOS), som ble stiftet av Financial Conduct Authority (FCA) i Storbritannia. FOS er en uavhengig tvisteløsningsordning for finansielle tjenester.</target>
+</trans-unit>
+<trans-unit translate="yes" id="44">
+<source>You can request a review of your complaint by the FOS if:</source>
+<target state="translated">Du kan be om en gjennomgang av klagen hos FOS hvis du</target>
+</trans-unit>
+<trans-unit translate="yes" id="45">
+<source>You still aren't satisfied after receiving our final response notification.</source>
+<target state="translated">fortsatt ikke er fornøyd etter å ha mottatt det endelige svaret vårt</target>
+</trans-unit>
+<trans-unit translate="yes" id="46">
+<source>You issued your complaint to us but haven't received a response within eight weeks.</source>
+<target state="translated">sendte klagen din til oss, men ikke mottok svar innen åtte uker</target>
+</trans-unit>
+<trans-unit translate="yes" id="47">
+<source>The service is free.</source>
+<target state="translated">Tjenesten er gratis.</target>
+</trans-unit>
+<trans-unit translate="yes" id="48">
+<source>However, there are some limitations on what the Financial Ombudsman Service can review.</source>
+<target state="translated">Men det er noen begrensninger for hva Financial Ombudsman Service kan gjennomgå.</target>
+</trans-unit>
+<trans-unit translate="yes" id="49">
+<source>For more information, please contact them at:</source>
+<target state="translated">For mer informasjon kan du ta kontakte dem på:</target>
+</trans-unit>
+<trans-unit translate="yes" id="50">
+<source>The Financial Ombudsmen Service</source>
+<target state="translated">The Financial Ombudsmen Service</target>
+</trans-unit>
+<trans-unit translate="yes" id="51">
+<source>South Quay Plaza</source>
+<target state="translated">South Quay Plaza</target>
+</trans-unit>
+<trans-unit translate="yes" id="52">
+<source>183 Marsh Wall</source>
+<target state="translated">183 Marsh Wall</target>
+</trans-unit>
+<trans-unit translate="yes" id="53">
+<source>London</source>
+<target state="translated">London</target>
+</trans-unit>
+<trans-unit translate="yes" id="54">
+<source>E14 9SR</source>
+<target state="translated">E14 9SR</target>
+</trans-unit>
+<trans-unit translate="yes" id="55">
+<source>You may also phone the FOS at 0845 080 1800 (outside the UK, dial +44 20 7964 1000).</source>
+<target state="translated">Du kan også ringe FOS på +44 20 7964 1000 (eller 0845 080 1800 hvis du er i Storbritannia).</target>
+</trans-unit>
+<trans-unit translate="yes" id="56">
+<source>For complete information about the FOS, please visit <bpt id="1">&lt;a </bpt>href="http://www.financial-ombudsman.org.uk<bpt id="2">"&gt;</bpt>www.financial-ombudsman.org.uk<bpt id="3">&lt;/a&gt;</bpt>.</source>
+<target state="translated">Hvis du vil ha mer informasjon om FOS, kan du besøke <bpt id="1">&lt;a </bpt>href="http://www.financial-ombudsman.org.uk<bpt id="2">"&gt;</bpt>www.financial-ombudsman.org.uk<bpt id="3">&lt;/a&gt;</bpt>.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

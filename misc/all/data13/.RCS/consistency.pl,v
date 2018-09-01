@@ -1,0 +1,51 @@
+head	1.2;
+access;
+symbols;
+locks
+	eb:1.2; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.2
+date	2015.01.08.19.39.11;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.07.11.07.03;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.2
+log
+@vim
+@
+text
+@sub consistency {
+    First, find source segments that are identical by first
+	   * getting the length of all segments
+	   * matching the actual contents of those segments (any number)
+	Second, if 2 source segments are identical
+	   * check that the corresponding target segments are identical as well.
+         Bonus:  output all segments for comparison with highlighting for differences, where the odd one out (in the case of many segments) has its differing parts highlighted.
+
+
+
+}
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d8 3
+@

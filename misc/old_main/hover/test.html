@@ -1,0 +1,37 @@
+
+<html lang="no"> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head> 
+<title>CSS mouseover for text and images without JavaScript</title>
+<style type="text/css">
+
+/* properties for class dropt */
+/* usage: <span class="dropt" title="">HTML text<span style="width:500px;">Pop-up text</span></span> */
+/* usage: <span class="dropt" title="">HTML text<span><img src="example.jpg"/></span></span> */
+span.dropt {border-bottom: thin dotted; background: #ffeedd;}
+span.dropt:hover {text-decoration: none; background: #ffffff; z-index: 6; }
+span.dropt span {position: absolute; left: -9999px;
+  margin: 20px 0 0 0px; padding: 3px 3px 3px 3px;
+  border-style:solid; border-color:black; border-width:1px; z-index: 6;}
+span.dropt:hover span {left: 2%; background: #ffffff;} 
+span.dropt span {position: absolute; left: -9999px;
+  margin: 4px 0 0 0px; padding: 3px 3px 3px 3px; 
+  border-style:solid; border-color:black; border-width:1px;}
+span.dropt:hover span {margin: 20px 0 0 170px; background: #ffffff; z-index:6;} 
+
+span.imgswap {background-image:url("../img/mmeFloraSm.jpg"); 
+  background-repeat: no-repeat; display:block;}
+span.imgswap:hover img {visibility:hidden;} 
+-->
+</style>
+
+Si fra dersom du 
+<span class="dropt" title="">ønsker å<span style="width: 250px;">
+<b>ønsker å</b><br/>
+</p>
+<b>vil</b> is better.
+</span>
+</span>
+installere appen på flere enheter.
+</p>
+<div class="center">

@@ -1,0 +1,919 @@
+head	1.37;
+access;
+symbols;
+locks
+	eb:1.37; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.37
+date	2015.01.09.03.20.56;	author eb;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.01.09.03.15.35;	author eb;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.01.09.03.14.57;	author eb;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.01.09.03.14.55;	author eb;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.01.09.03.13.27;	author eb;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.01.09.02.46.39;	author eb;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.01.09.02.44.56;	author eb;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.01.09.02.44.54;	author eb;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2015.01.09.02.43.55;	author eb;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.01.09.02.43.27;	author eb;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2015.01.09.02.42.32;	author eb;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2015.01.09.02.42.17;	author eb;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.01.09.02.41.52;	author eb;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.01.09.02.41.33;	author eb;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.01.09.02.41.08;	author eb;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.01.09.02.40.54;	author eb;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.01.09.02.40.37;	author eb;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.01.09.02.39.46;	author eb;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.01.09.02.36.46;	author eb;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.01.09.02.35.41;	author eb;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.01.09.02.33.35;	author eb;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.01.09.02.33.21;	author eb;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.01.09.02.33.00;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.01.09.02.31.43;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.01.09.02.30.41;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.01.09.02.29.22;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.01.09.02.28.11;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.01.09.02.27.58;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.01.09.02.27.48;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.01.09.02.26.45;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.01.09.02.25.08;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.01.09.02.23.17;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.01.09.02.22.33;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.09.02.21.58;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.09.02.17.46;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.09.02.16.24;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.07.02.08.39;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.37
+log
+@vim
+@
+text
+@    use feature 'say';
+    use utf8;
+    use Number::Fraction;
+    use XML::LibXML;
+
+    sub run_advanced_tests {
+
+        my $source  = shift;
+        my $target  = shift;
+        my $i       = 0;
+        my $results = shift;
+        my $number = shift;
+        $doc = XML::LibXML->new->parse_file('tests/advanced.xml');
+        binmode( STDOUT, ":encoding(UTF-8)" );
+        foreach my $TU ( $doc->findnodes('body/test-unit') ) {
+
+            my $id              = $TU->findnodes('./@@id')->to_literal;
+            my $adv_source      = $TU->findnodes('./source')->to_literal;
+            my $adv_source_attr = $TU->findnodes('./source/@@attr')->to_literal;
+            my $adv_target      = $TU->findnodes('./target')->to_literal;
+            my $adv_target_attr = $TU->findnodes('./target/@@attr')->to_literal;
+            my $desc            = $TU->findnodes('./desc')->to_literal;
+            my $error           = $TU->findnodes('./error')->to_literal;
+
+         #   say "Test ID is $id";
+         #   say "Test source is $adv_source";
+         #   say "Test target is $adv_target";
+         #   say "Test desc is $desc";
+         #   say "Test error is $error\n";
+
+            # my $error = Number::Fraction->new("$error");
+
+            if ( $adv_source =~ /none/i ) {
+                $adv_source = ".";
+            }
+
+            if (   ( $adv_source_attr =~ /invert/ )
+                && ( $adv_target_attr !~ /invert/ ) )
+            {
+                if (   ( $source !~ /$adv_source/ )
+                    && ( $target =~ /$adv_target/ ) )
+                {
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                      "$error";
+                }
+            }
+            elsif (( $adv_source_attr =~ /invert/ )
+                && ( $adv_target_attr =~ /invert/ ) )
+            {
+                if (   ( $source !~ /$adv_source/ )
+                    && ( $target !~ /$adv_target/ ) )
+                {
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                      "$error";
+
+                }
+            }
+            elsif (( $adv_source_attr !~ /invert/ )
+                && ( $adv_target_attr =~ /invert/ ) )
+            {
+                if (   ( $source =~ /$adv_source/ )
+                    && ( $target !~ /$adv_target/ ) )
+                {
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                      "$error";
+                }
+            }
+            else {
+
+                if (   ( $source =~ /$adv_source/ )
+                    && ( $target =~ /$adv_target/ ) )
+                {
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} +=
+                      "$error";
+                }
+            }
+            $i += 1;
+        }
+    }
+
+    1;
+@
+
+
+1.36
+log
+@vim
+@
+text
+@d25 5
+a29 5
+            say "Test ID is $id";
+            say "Test source is $adv_source";
+            say "Test target is $adv_target";
+            say "Test desc is $desc";
+            say "Test error is $error\n";
+@
+
+
+1.35
+log
+@vim
+@
+text
+@d11 2
+a12 1
+        my $results = shift my $number = shift;
+@
+
+
+1.34
+log
+@vim
+@
+text
+@d11 1
+a11 2
+        my $results = shift
+        my $number  = shift;
+d32 3
+a34 3
+                if ( $adv_source =~ /none/i ) {
+                    $adv_source = ".";
+                }
+d36 5
+a40 2
+                if (   ( $adv_source_attr =~ /invert/ )
+                    && ( $adv_target_attr !~ /invert/ ) )
+d42 2
+a43 6
+                    if (   ( $source !~ /$adv_source/ )
+                        && ( $target =~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc}
+                          += "$error";
+                    }
+d45 6
+a50 2
+                elsif (( $adv_source_attr =~ /invert/ )
+                    && ( $adv_target_attr =~ /invert/ ) )
+d52 2
+a53 5
+                    if (   ( $source !~ /$adv_source/ )
+                        && ( $target !~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc}
+                          += "$error";
+a54 1
+                    }
+d56 6
+a61 2
+                elsif (( $adv_source_attr !~ /invert/ )
+                    && ( $adv_target_attr =~ /invert/ ) )
+d63 2
+a64 6
+                    if (   ( $source =~ /$adv_source/ )
+                        && ( $target !~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc}
+                          += "$error";
+                    }
+d66 2
+a67 1
+                else {
+d69 5
+a73 6
+                    if (   ( $source =~ /$adv_source/ )
+                        && ( $target =~ /$adv_target/ ) )
+                    {
+                        ${$results}{"id=\"$number\""}{advanced}{$desc}
+                          += "$error";
+                    }
+a74 1
+                $i += 1;
+d76 1
+d78 2
+a79 1
+    
+@
+
+
+1.33
+log
+@vim
+@
+text
+@d80 1
+a80 1
+    }
+@
+
+
+1.32
+log
+@vim
+@
+text
+@d11 1
+a11 1
+        my $results = shift;
+a32 3
+            my $num = @@{$number};
+            for ( my $i = 0 ; $i < $num; $i++ ) {
+
+d40 2
+a41 2
+                    if (   ( ${$source}[$i] !~ /$adv_source/ )
+                        && ( ${$target}[$i] =~ /$adv_target/ ) )
+d43 1
+a43 1
+                        ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc}
+d50 2
+a51 2
+                    if (   ( ${$source}[$i] !~ /$adv_source/ )
+                        && ( ${$target}[$i] !~ /$adv_target/ ) )
+d53 1
+a53 1
+                        ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc}
+d61 2
+a62 2
+                    if (   ( ${$source}[$i] =~ /$adv_source/ )
+                        && ( ${$target}[$i] !~ /$adv_target/ ) )
+d64 1
+a64 1
+                        ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc}
+d70 2
+a71 2
+                    if (   ( ${$source}[$i] =~ /$adv_source/ )
+                        && ( ${$target}[$i] =~ /$adv_target/ ) )
+d73 1
+a73 1
+                        ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc}
+@
+
+
+1.31
+log
+@vim
+@
+text
+@d33 2
+a34 2
+            my $test = @@{$number};
+            for ( my $i = 0 ; $i < 50000 ; $i++ ) {
+@
+
+
+1.30
+log
+@vim
+@
+text
+@d25 6
+a30 5
+              say "Test ID is $id";
+              say "Test source is $adv_source";
+              say "Test target is $adv_target";
+              say "Test desc is $desc";
+              say "Test error is $error\n";
+d32 1
+a32 1
+            
+d36 3
+a38 4
+            
+            if ( $adv_source =~ /none/i ) {
+                $adv_source = ".";
+            }
+d40 2
+a41 5
+            if (   ( $adv_source_attr =~ /invert/ )
+                && ( $adv_target_attr !~ /invert/ ) )
+            {
+                if (   ( ${$source}[$i] !~ /$adv_source/ )
+                    && ( ${$target}[$i] =~ /$adv_target/ ) )
+d43 6
+a48 2
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} +=
+                      "$error";
+d50 2
+a51 6
+            }
+            elsif (( $adv_source_attr =~ /invert/ )
+                && ( $adv_target_attr =~ /invert/ ) )
+            {
+                if (   ( ${$source}[$i] !~ /$adv_source/ )
+                    && ( ${$target}[$i] !~ /$adv_target/ ) )
+d53 5
+a57 2
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} +=
+                      "$error";
+d59 1
+d61 2
+a62 6
+            }
+            elsif (( $adv_source_attr !~ /invert/ )
+                && ( $adv_target_attr =~ /invert/ ) )
+            {
+                if (   ( ${$source}[$i] =~ /$adv_source/ )
+                    && ( ${$target}[$i] !~ /$adv_target/ ) )
+d64 6
+a69 2
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} +=
+                      "$error";
+d71 1
+a71 2
+            }
+            else {
+d73 6
+a78 5
+                if (   ( ${$source}[$i] =~ /$adv_source/ )
+                    && ( ${$target}[$i] =~ /$adv_target/ ) )
+                {
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} +=
+                      "$error";
+d80 1
+d82 1
+a82 2
+            $i += 1;
+        }}
+@
+
+
+1.29
+log
+@vim
+@
+text
+@d31 1
+d35 1
+a35 1
+            }
+d81 1
+a81 1
+        }
+@
+
+
+1.28
+log
+@vim
+@
+text
+@d25 5
+a29 5
+            #  say "Test ID is $id";
+            #  say "Test source is $adv_source";
+            #  say "Test target is $adv_target";
+            #  say "Test desc is $desc";
+            #  say "Test error is $error\n";
+@
+
+
+1.27
+log
+@vim
+@
+text
+@d12 1
+a12 1
+		my $number = shift;
+d31 2
+a32 2
+my $test = @@{$number};
+for ( my $i = 0; $i < $test;$i++){
+d34 1
+a34 1
+}
+d45 2
+a46 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+d55 2
+a56 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+d66 2
+a67 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+d75 2
+a76 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+@
+
+
+1.26
+log
+@vim
+@
+text
+@a31 2
+say $test;
+die;
+@
+
+
+1.25
+log
+@vim
+@
+text
+@d34 1
+a34 1
+for ( my $i = 0; $i < ${$number};$i++){
+@
+
+
+1.24
+log
+@vim
+@
+text
+@d31 1
+a31 1
+my $test = ${$number};
+@
+
+
+1.23
+log
+@vim
+@
+text
+@d31 2
+a32 1
+say ${$number};
+@
+
+
+1.22
+log
+@vim
+@
+text
+@d31 1
+a31 1
+say @@{$number};
+@
+
+
+1.21
+log
+@vim
+@
+text
+@d31 1
+a31 1
+say ${$number};
+@
+
+
+1.20
+log
+@vim
+@
+text
+@d31 2
+a32 1
+
+@
+
+
+1.19
+log
+@vim
+@
+text
+@d32 1
+a32 5
+print scalar @@{$number};
+print "\n";
+print ${$number};
+
+for ( my $i = 0; $i < @@{$number};$i++){
+d42 2
+a43 2
+                if (   ( $source !~ /$adv_source/ )
+                    && ( $target =~ /$adv_target/ ) )
+d51 2
+a52 2
+                if (   ( $source !~ /$adv_source/ )
+                    && ( $target !~ /$adv_target/ ) )
+d61 2
+a62 2
+                if (   ( $source =~ /$adv_source/ )
+                    && ( $target !~ /$adv_target/ ) )
+@
+
+
+1.18
+log
+@vim
+@
+text
+@d32 1
+a32 1
+print @@{$number};
+@
+
+
+1.17
+log
+@vim
+@
+text
+@d32 3
+@
+
+
+1.16
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < ${$number};$i++){
+@
+
+
+1.15
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < scalar ${$number};$i++){
+@
+
+
+1.14
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < scalar @@{$number};$i++){
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < scalar ${$number}[$i];$i++){
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d70 2
+a71 2
+                if (   ( @@{$source}[$i] =~ /$adv_source/ )
+                    && ( @@{$target}[$i] =~ /$adv_target/ ) )
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d73 1
+a73 1
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} += "$error";
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < scalar ${$number}[$i]};$i++){
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < scalar @@{$number}[$i]};$i++){
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d33 1
+a33 1
+for ( my $i = 0; $i < scalar @@{${$number}[$i]};$i++){
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d46 1
+a46 1
+                    ${$results}{"id=\"@@{$number}[$i]\""}{advanced}{$desc} += "$error";
+d55 1
+a55 1
+                    ${$results}{"id=\"@@{$number}[$i]\""}{advanced}{$desc} += "$error";
+d65 1
+a65 1
+                    ${$results}{"id=\"@@{$number}[$i]\""}{advanced}{$desc} += "$error";
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d55 1
+a55 1
+                    ${$results}{"id=\"${@@number}[$i]\""}{advanced}{$desc} += "$error";
+d65 1
+a65 1
+                    ${$results}{"id=\"${@@number}[$i]\""}{advanced}{$desc} += "$error";
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d46 1
+a46 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+d55 1
+a55 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+d65 1
+a65 1
+                    ${$results}{"id=\"${$number}[$i]\""}{advanced}{$desc} += "$error";
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d12 1
+a12 1
+		my ${$number}[$i] = shift;
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d12 1
+a12 1
+		my $number = shift;
+d33 1
+a33 1
+for ( my $i = 0; $i < scalar @@{$number};$i++){
+d46 1
+a46 1
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} += "$error";
+d55 1
+a55 1
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} += "$error";
+d65 1
+a65 1
+                    ${$results}{"id=\"$number\""}{advanced}{$desc} += "$error";
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d70 2
+a71 2
+                if (   ( ${$source}[$i] =~ /$adv_source/ )
+                    && ( ${$target}[$i] =~ /$adv_target/ ) )
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d32 5
+a36 1
+            if ( $adv_source =~ /none/ ) {
+d70 2
+a71 2
+                if (   ( $source =~ /$adv_source/ )
+                    && ( $target =~ /$adv_target/ ) )
+@

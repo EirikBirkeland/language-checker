@@ -1,0 +1,12 @@
+Hold  Keep
+posisjon	plassering	beliggenhet
+Chrome\b	Chromecast
+app	program
+refusjon	tilbakebetaling
+melding     varsel
+ordre bestilling
+\bJeg\b \bVi\b
+forlengelse utvidelse
+forsendelse frakt
+betrodd     klarert     pålitelig
+lenke link

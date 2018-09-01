@@ -1,0 +1,369 @@
+head	1.17;
+access;
+symbols;
+locks
+	eb:1.17; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.17
+date	2015.02.09.03.03.39;	author eb;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.02.09.03.01.41;	author eb;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.02.09.03.00.38;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.02.09.02.56.02;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.02.09.02.55.46;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.02.09.02.55.14;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.02.09.02.53.57;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.02.09.02.50.53;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.02.08.21.08.03;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.02.08.21.04.54;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.02.08.21.04.35;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.02.08.17.31.07;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.02.08.17.30.26;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.14.13.24.55;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.14.13.23.50;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.14.06.32.05;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.10.05.03.07;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.17
+log
+@vim
+@
+text
+@use feature 'say';
+use Term::ANSIColor qw(:constants);
+
+sub find_missing_untranslatables {
+    my ( $untrans, $source, $target, $results, $number ) = @@_;
+    my $x = 0;
+    foreach ( @@{$untrans} ) {
+        chomp @@{$untrans}[$x];
+        my $ea = each_arrayref( $source, $target, $number );
+        while ( my ( $source, $target, $number ) = $ea->() ) {
+
+            if ( $source =~ /@@{$untrans}[$x]/ ) {
+                my $count_source = () = $source =~ /$$untrans[$x]/g;
+                my $count_target = () = $target =~ /$$untrans[$x]/g;
+                if ( $count_target != $count_source ) {
+                    my $c_miss = $count_source - $count_target;
+
+                    say
+"<p>$c_miss instances of @@$untrans[$x] missing in target:<br>\n$target<br>\n($source)</p>";
+
+                    $$results{"id=\"$number\""}{untranslatable}
+                      { @@{$untrans}[$x] } = "$c_miss";
+                }
+            }
+        }
+        $x += 1;
+    }
+}
+1;
+@
+
+
+1.16
+log
+@vim
+@
+text
+@d13 2
+a14 2
+                my $count_source = () = $source =~ /@@{$untrans}[$x]/g;
+                my $count_target = () = $target =~ /@@{$untrans}[$x]/g;
+d20 2
+a21 2
+                    
+$$results{"id=\"$number\""}{untranslatable}
+@
+
+
+1.15
+log
+@vim
+@
+text
+@d13 4
+a16 4
+                    my $count_source = () = $source =~ /@@{$untrans}[$x]/g;
+                    my $count_target = () = $target =~ /@@{$untrans}[$x]/g;
+                    if ( $count_target != $count_source ) {
+                        my $c_miss = $count_source - $count_target;
+d18 1
+a18 1
+                        say
+d20 3
+a22 4
+
+                        $$results{"id=\"$number\""}{untranslatable}
+                          { @@{$untrans}[$x] } = "$c_miss";
+                    }
+d24 1
+@
+
+
+1.14
+log
+@vim
+@
+text
+@a12 1
+                if ( $source =~ /@@{$untrans}[$x]/g ) {
+a24 1
+            }
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d19 2
+a20 1
+say "<p>$c_miss instances of @@$untrans[$x] missing in target:<br>\n$target<br>\n($source)<p>";
+@
+
+
+1.12
+log
+@vim
+@
+text
+@a20 2
+                        #                         print
+#"Untranslatable: $c_miss instances of @@{$untrans}[$x] missing in Target: $target\n($source)\n\n";
+@
+
+
+1.11
+log
+@vim
+@
+text
+@a4 2
+    say "<h3>Untranslatables</h3>";
+    say "<div>";
+a30 1
+    say "</div>";
+@
+
+
+1.10
+log
+@vim
+@
+text
+@a2 2
+my $red    = "\e[4;31m";
+my $normal = "\e[0m";
+d15 1
+a15 1
+                if ( $source =~ s/(@@{$untrans}[$x])/$red$1$normal/g ) {
+a18 1
+                        #   $target =~ s/(@@{$untrans}[$x])/$red$1$normal/g;
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                        $target =~ s/(@@{$untrans}[$x])/$red$1$normal/g;
+d24 4
+a27 2
+           print
+"Untranslatable: $c_miss instances of @@{$untrans}[$x] missing in Target: $target\n($source)\n\n";
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d24 2
+a25 3
+
+                        #           print
+#"UNTRANSLATABLE: $c_miss instances of @@{$untrans}[$x] missing in Target: $target\n($source)\n\n";
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d23 4
+a26 2
+                        print
+"UNTRANSLATABLE: $c_miss instances of @@{$untrans}[$x] missing in Target: $target\n($source)\n\n";
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d7 2
+a8 2
+say "<h3>Untranslatables</h3>";
+say "<DIV>";
+d10 1
+a10 1
+    my $x    = 0;
+d13 2
+a14 2
+my $ea = each_arrayref( $source, $target, $number);
+while ( my ($source, $target, $number ) = $ea->()){            
+d16 1
+a16 1
+if ( $source =~ /@@{$untrans}[$x]/ ) {
+d33 1
+a33 1
+say "</DIV>";
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d1 1
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d6 2
+a7 1
+
+d32 1
+@
+
+
+1.3
+log
+@vim
+@
+text
+@a7 1
+
+@
+
+
+1.2
+log
+@vim
+@
+text
+@a9 1
+    my $test = 0+@@$number;
+d12 7
+a18 5
+        for ( my $i = 0 ; $i < scalar $test ; $i++ ) {
+            if ( $$source[$i] =~ /@@{$untrans}[$x]/ ) {
+                if ( $$source[$i] =~ s/(@@{$untrans}[$x])/$red$1$normal/g ) {
+                    my $count_source = () = $$source[$i] =~ /@@{$untrans}[$x]/g;
+                    my $count_target = () = $$target[$i] =~ /@@{$untrans}[$x]/g;
+d20 1
+a20 1
+                        $$target[$i] =~ s/(@@{$untrans}[$x])/$red$1$normal/g;
+d23 2
+a24 2
+"UNTRANSLATABLE: $c_miss instances of @@{$untrans}[$x] missing in Target: $$target[$i]\n($$source[$i])\n\n";
+                        ${$results}{"id=\"$$number[$i]\""}{untranslatable}
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d10 1
+a10 1
+    my $test = @@$number;
+@

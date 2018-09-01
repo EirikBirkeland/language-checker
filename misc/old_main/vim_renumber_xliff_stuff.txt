@@ -1,0 +1,1 @@
+:let i=1 | g/\"yes\" id=\"[0-9]*/s//\='"yes" id="'.i/ | let i=i+1

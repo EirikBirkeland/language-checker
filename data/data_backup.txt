@@ -1,0 +1,5 @@
+For å ([a-zA-Z0-9]+ ){1,5}(?:om|at)((?!,).)*\.	test
+For å (?:(?!\bom\b|\bat\b).)*?,.*?\.	test
+1(?:http|www|\/)(((?!hl=en|hl=no).)*)\n2(?:http|www|\/)(?!\1).*	test
+1((?:http|www|\/).*?(?:hl=|\/intl\/))(?:[a-z]{2})(.*)\n2\1no\2	test
+^Hvis ((?!,).)*\.	Lacking comma in Hvis sentence.

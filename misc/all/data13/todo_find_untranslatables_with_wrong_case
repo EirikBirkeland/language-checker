@@ -1,0 +1,3 @@
+if (( $string =~ /YouTube/i ) && ( $string !~ /YouTube/ )) {
+      print "The untranslatable was found, but there's a case mismatch!";
+}

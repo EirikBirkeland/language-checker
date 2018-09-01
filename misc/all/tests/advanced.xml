@@ -1,0 +1,133 @@
+<body>
+<test-unit id="1">
+<source>none</source>
+<target>(?i)^(?:Om|Hvis|Når) ((?!,).)*\.($|\s+|\R)</target>
+<desc>Lacking comma in Hvis sentence.</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="2">
+<source>none</source>
+<target>ttt|lll|fff</target>
+<desc>Trippled consonant.</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="3">
+<source>.*[^\s]$</source>
+<target>\s+$</target>
+<desc>Trailing space(s)</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="4">
+<source>^[^\s].*</source>
+<target>^\s+</target>
+<desc>Leading space(s)</desc>
+<error>0.166666666666667</error>
+</test-unit>
+
+<test-unit id="5">
+<source attr="invert">.*  .*| \.$</source>
+<target>  </target>
+<desc>Double space in target only</desc>
+<error>0.16666</error>
+</test-unit>
+
+<test-unit id="6">
+<source>none</source>
+<target>[\w]+, [\w]+, og [\w]+</target>
+<desc>Unneeded comma.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="7">
+<source>none</source>
+<target hint="^For å">(For å (\w+ ){1,5}(?:\bom\b|\bat\b)((?!,).)*?\.)</target>
+<desc>Missing comma in "For aa ... om/at ..." sentence.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="8">
+<source>none</source>
+<target hint="^For å">For å(?:(?!\bom\b|\bat\b).)*?,.*?\.</target>
+<desc>Unneeded comma in "For aa ..." sentence.</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="9">
+<source attr="invert">\b(\w{3,})\b \b\1\b</source>
+<target>\b(\w{3,})\b \b\1\b</target>
+<desc>Repeated word</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="10">
+<source>\.$</source>
+<target>[^.]$</target>
+<desc>Period missing in target</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="11">
+<source>[^."”!]$</source>
+<target>\.$</target>  <!-- should add a test for detecting incorrect end punctuation (such as comma) -->
+<desc>Period missing in source</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="12">
+<source attr="invert">[[:space:]]\.</source>
+<target>[[:space:]]\.</target>
+<desc>Suspicious space before period</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="13">
+<source attr="invert">[[:space:]]\,</source>
+<target>[[:space:]]\,</target>
+<desc>Suspicious space before comma</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="14">
+<source>.</source>
+<target>^\s*$</target>
+<desc>Target is missing!</desc>
+<error>3</error>
+</test-unit>
+
+<test-unit id="15">
+<source>.</source>
+<target>[0-9]+ [A-Z]{3}</target>
+<desc>Currency code in wrong location</desc>
+<error>3</error>
+</test-unit>
+
+<test-unit id="16" attr="long/short"> <!-- doesn't work, why? oh, backreferences won't be carried over. This must be fixed somehow! such as sticking $1 into another variable -->
+<source>disabled==(.)$</source>
+<target attr="invert">disabled==$1$</target>
+<desc>The last character differs!</desc>
+<error>3</error>
+</test-unit>
+
+<test-unit id="17">
+<source>.</source>
+<target> "|" </target>
+<desc>Incorrect quote type</desc>
+<error>1</error>
+</test-unit>
+
+<test-unit id="17">
+<source>.</source>
+<target>\b[0-9]{2}:[0-9]{2}\b</target>
+<desc>Date format containing colon</desc>
+<error>1</error>
+</test-unit>
+
+
+
+
+
+</body>
+

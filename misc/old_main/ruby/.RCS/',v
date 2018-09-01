@@ -1,0 +1,55 @@
+head	1.1;
+access;
+symbols;
+locks
+	eb:1.1; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.1
+date	2015.01.17.19.28.51;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.1
+log
+@vim
+@
+text
+@require 'rubygems'
+require 'nokogiri'
+require 'colorize'
+doc = Nokogiri::XML(File.open("combined.xlf"))
+#puts @@doc.xpath("//trans-unit//source")
+#puts @@doc.css("trans-unit source")
+
+transunit = "xliff/file/body/trans-unit"
+source = doc.xpath("#{transunit}/source").text
+
+doc.xpath("#{transunit}").each do |node|
+  
+  id = node['id']
+  translate = node['translate']
+  source = node.xpath("./source").text
+  target = node.xpath("./target").text
+
+end
+
+simple = "tests/simple.txt"
+lines = IO.readlines(simple)
+lines.each do |line|
+test = line.split("\t")
+  target.each do |lol|
+    if ( lol =~ /#{line}/)
+      puts "#{line}".red
+end
+end
+end
+@

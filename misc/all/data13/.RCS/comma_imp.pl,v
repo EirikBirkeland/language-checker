@@ -1,0 +1,91 @@
+head	1.3;
+access;
+symbols;
+locks
+	eb:1.3; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.3
+date	2015.01.08.14.35.11;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.08.14.35.10;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.07.02.09.35;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.3
+log
+@vim
+@
+text
+@#!/bin/perl
+use feature 'say';
+use utf8;
+use Number::Fraction;
+
+sub comma_imp {
+
+# todo: weakness: sometimes get FPs like in: "Fremhev søkeord, finn bestemte ord eller hopp til relevante deler av en side."
+
+    my $target  = shift;
+    my $results = shift;
+    my $number  = shift;
+    my @@words =
+      qw( trykk installer legg koble skriv høyreklikk kom velg bruk følg gjør merk start gi slutt nevn finn åpne slå logg slett tøm fjern last begynn se del ta si sjekk lagre oppfør kommenter godta hold gå stå sett levér dra aktivér zoom vurder varsle samle ring oppdater ha erstatt avvis utløs tilpass spør rediger rapportér posisjonér overfør oppgi øk krev kjøp jobb hent angi atskil adskil viderekoble avslå vend utfør sørg pass skyv prøv tell oppgrader lad juster inviter husk filtrer delta betal behold );
+
+    if ( $target =~ m/, [\w]+/ ) {
+        foreach $word (@@words) {
+            if ( $target =~ m/, $word\b/g ) {
+                $$results{"id=\"$number\""}{advanced}{", $word"} += 1;
+            }
+        }
+    }
+}
+1;
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d7 1
+d9 5
+a13 5
+    
+my $target = shift;
+	my $results = shift;
+    my $number = shift;
+	my @@words =
+d19 1
+a19 1
+               $$results{"id=\"$number\""}{advanced}{", $word"} += 1;
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d7 3
+a9 2
+
+    my $target = shift;
+@

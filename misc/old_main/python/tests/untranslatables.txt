@@ -1,0 +1,27 @@
+Android Beam
+Apple
+BlackBerry
+Bluetooth
+Chrome
+Google
+Google Play
+Linux
+Macintosh
+Mac OS
+Mac OS X
+Nexus
+NFC
+PIN
+USB
+Windows
+Windows 2000 Professional
+Windows 7
+Windows Server 2003
+Windows Server 2008
+Windows Server 2008 R2
+Windows Vista
+Windows XP
+Windows XP Home
+Windows XP Professional
+Windows XP Professional x64 Edition
+YouTube

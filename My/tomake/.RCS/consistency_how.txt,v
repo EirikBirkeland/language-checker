@@ -1,0 +1,53 @@
+head	1.2;
+access;
+symbols;
+locks
+	eb:1.2; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.2
+date	2015.01.18.19.02.05;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.18.18.31.22;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.2
+log
+@vim
+@
+text
+@Consistency test:
+
+- Gather identical source segments. Upon finding identical ones, check whether their sources are all identical. If one source differs, display *all* segments side-by-side.
+
+- 
+
+Hash (
+"This is a sentence" => 2
+);
+
+
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d5 1
+a5 1
+
+@

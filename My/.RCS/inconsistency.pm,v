@@ -1,0 +1,164 @@
+head	1.7;
+access;
+symbols;
+locks
+	eb:1.7; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.7
+date	2015.01.18.11.36.19;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.01.18.11.36.12;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.01.18.11.35.55;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.18.11.35.43;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.18.11.34.30;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.18.11.28.17;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.08.19.39.11;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.7
+log
+@vim
+@
+text
+@use 5.20.1;
+
+sub consistency {
+
+my ($source, $target, $results, $number) = @@_;
+my %length;
+my $lsource;
+my $ltarget;
+
+my $ea = each_arrayref( $source, $target, $number );
+while ( my ($source, $target, $number )  = $ea->()){
+$lsource = length($source);
+$ltarget = length($target);
+
+$length{$number}{source} = $lsource;
+
+
+}
+
+p %length;
+
+}
+1;
+__END__
+
+    First, find source segments that are identical by first
+	   * getting the length of all segments
+	   * matching the actual contents of those segments (any number)
+	Second, if 2 source segments are identical
+	   * check that the corresponding target segments are identical as well.
+         Bonus:  output all segments for comparison with highlighting for differences, where the odd one out (in the case of many segments) has its differing parts highlighted.
+
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d23 1
+a23 1
+
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d20 1
+a20 1
+p %results;
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d5 1
+a5 1
+my ($source, $target, $results, $number) = @@_
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d15 1
+a15 1
+$$length{$number}{source} = $lsource;
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d6 3
+d10 4
+d15 1
+d18 1
+d20 1
+a20 4
+
+
+
+
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d1 2
+d4 16
+a26 3
+
+
+}
+@

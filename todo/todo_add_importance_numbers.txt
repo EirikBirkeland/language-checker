@@ -1,0 +1,30 @@
+- add importance numbers to each individual test. 1, 2, 3, etc.
+
+- also, add interface to program to allow user to choose weight of errors belonging to one  error type.
+
+- or, simply let the user decide the order of error types.
+
+- add a prompt for each outputted item, where the user can click F to mark as false positive and exclude from final report.
+  when any error is marked as a false positive, that test is given a 'penalty point', and this is incremented in a file and
+  checked each time the test is run. the penalty point augments the existing overall error rating.
+
+    for example: simple.txt contains "Google Store    Google Butikk   5" where 5 indicates a very severe error.
+                 the user has chosen to give simple tests a penalty, reducing weight in alf. The nubmer is now 2.5.
+                 the user gets 5 false positives for this test (hypothetically!),
+                 each false positive report increments a 0 figure by 1 in the original test file in a separate column.
+                 e.g. "Google Store Google Butikk   5   0" may change to "Google Store Google Butikk   5   1"
+                 let use assume this test again and again yields false positives, and we cannot be bothered to remove it,
+                 or want to keep it around for the future. then we would keep incrementing the false positive number.
+                 So, after a week or so, we have seen 50 false positives, resulting in "Google Store    Google Butikk   5   50.
+                 If in our configuration file we have set the 'enable use of FP data' flag to 1, and we have set deduction weight to 2%,
+                 the display priority would change. So, a display priority of 5 divided by 2 = 2.5. Further, we deduct
+                 .50 points, resulting in a new display priority figure of 2.0 However, while it appears further down the list
+                 as far as priority, it is still marked 'very serious error (5)' but with a certainty rating of "low."
+                 Each non-false positive should lead to the addition of yet another number. Let us suppose it was checked a total
+                 of 500 times, but only 50 times were marked by us as FPs: This would lead to a file line entry of "Google Store  Google Butikk 5 50  500",
+                 from which we reach a reliability percentage of 95%! Reading these numbers could become unwieldy, so perhaps they could be pipe-separated as such:
+                 Google Store   Google Butikk   5|50|500, however using a simple separator - whichever is chosen - would be better.
+                 
+                 The file header might look like: Error Correction  Severity    FPs TotalRuns
+                
+OR, store the FPs and TotalRuns in a separate file where the 1st column is matched with the test file. The 1st column should be the 'test name' (meaning sometimes 2nd column is a duplicate - but so be it)

@@ -1,0 +1,4 @@
+1. Target only.
+2. Target, but conditional on source.
+3. Source and target should be identical (untranslatable)
+4. Product name has not been translated (target contains forbidden term)!

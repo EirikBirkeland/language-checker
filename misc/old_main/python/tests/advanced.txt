@@ -1,0 +1,2 @@
+^(?:Hvis|Når) ((?!,).)*\.($|\s+|\R)	Lacking comma in Hvis sentence.
+ttt|lll|fff

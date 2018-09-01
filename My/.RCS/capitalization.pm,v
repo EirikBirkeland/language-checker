@@ -1,0 +1,1973 @@
+head	1.105;
+access;
+symbols;
+locks
+	eb:1.105; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.105
+date	2015.01.18.07.53.27;	author eb;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2015.01.18.07.52.32;	author eb;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2015.01.18.07.51.17;	author eb;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2015.01.18.07.50.45;	author eb;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2015.01.18.07.50.10;	author eb;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2015.01.18.07.49.47;	author eb;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2015.01.18.07.44.33;	author eb;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2015.01.18.07.42.29;	author eb;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2015.01.18.07.42.10;	author eb;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2015.01.18.07.39.38;	author eb;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2015.01.18.07.39.36;	author eb;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2015.01.18.07.39.31;	author eb;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2015.01.18.07.36.59;	author eb;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2015.01.18.07.36.49;	author eb;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2015.01.18.07.36.32;	author eb;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2015.01.18.07.36.10;	author eb;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2015.01.18.07.36.03;	author eb;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2015.01.18.07.35.46;	author eb;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2015.01.18.07.35.22;	author eb;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2015.01.18.07.34.47;	author eb;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2015.01.18.07.33.52;	author eb;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2015.01.18.07.32.43;	author eb;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2015.01.18.07.31.15;	author eb;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2015.01.18.07.28.28;	author eb;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2015.01.18.07.28.15;	author eb;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2015.01.18.07.28.05;	author eb;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2015.01.18.07.28.00;	author eb;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2015.01.18.07.26.01;	author eb;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2015.01.18.07.25.15;	author eb;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2015.01.18.07.25.13;	author eb;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2015.01.18.07.25.00;	author eb;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2015.01.18.07.22.19;	author eb;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2015.01.18.07.22.02;	author eb;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2015.01.18.07.21.34;	author eb;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2015.01.18.07.20.41;	author eb;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2015.01.18.07.17.52;	author eb;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2015.01.18.07.17.30;	author eb;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2015.01.18.07.14.14;	author eb;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2015.01.18.07.13.43;	author eb;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2015.01.18.07.13.15;	author eb;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2015.01.18.07.13.08;	author eb;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2015.01.18.07.13.00;	author eb;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2015.01.18.07.12.58;	author eb;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2015.01.18.07.12.39;	author eb;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2015.01.18.07.12.30;	author eb;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2015.01.18.07.12.09;	author eb;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2015.01.18.07.11.21;	author eb;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2015.01.18.07.10.30;	author eb;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2015.01.18.07.10.29;	author eb;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2015.01.18.07.10.18;	author eb;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2015.01.18.07.09.32;	author eb;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2015.01.18.07.09.14;	author eb;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2015.01.18.07.08.33;	author eb;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2015.01.18.07.08.15;	author eb;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2015.01.18.07.00.51;	author eb;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2015.01.18.07.00.06;	author eb;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2015.01.18.07.00.02;	author eb;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2015.01.18.06.59.48;	author eb;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2015.01.18.06.59.05;	author eb;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2015.01.18.06.57.58;	author eb;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2015.01.18.06.57.16;	author eb;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2015.01.18.06.57.04;	author eb;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2015.01.18.06.56.03;	author eb;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2015.01.18.06.55.45;	author eb;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2015.01.18.06.55.08;	author eb;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2015.01.18.06.53.42;	author eb;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2015.01.18.06.53.09;	author eb;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2015.01.18.06.52.54;	author eb;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2015.01.18.06.52.05;	author eb;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2015.01.18.06.51.52;	author eb;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2015.01.18.06.51.29;	author eb;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2015.01.18.06.51.11;	author eb;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2015.01.18.06.50.40;	author eb;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2015.01.18.06.50.08;	author eb;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2015.01.18.06.27.30;	author eb;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2015.01.18.06.25.17;	author eb;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2015.01.18.06.24.25;	author eb;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2015.01.18.06.23.56;	author eb;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2015.01.18.06.23.54;	author eb;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2015.01.18.06.21.00;	author eb;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2015.01.18.06.20.56;	author eb;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2015.01.18.06.08.11;	author eb;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2015.01.17.22.37.03;	author eb;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2015.01.17.22.35.52;	author eb;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2015.01.17.22.35.29;	author eb;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2015.01.17.22.33.58;	author eb;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2015.01.17.22.31.10;	author eb;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2015.01.17.22.29.25;	author eb;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2015.01.17.22.28.39;	author eb;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2015.01.17.22.28.37;	author eb;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2015.01.17.22.28.17;	author eb;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2015.01.17.22.28.09;	author eb;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2015.01.17.22.24.35;	author eb;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2015.01.17.22.24.00;	author eb;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2015.01.17.22.23.58;	author eb;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2015.01.17.22.23.49;	author eb;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2015.01.17.22.23.35;	author eb;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2015.01.17.22.22.29;	author eb;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2015.01.17.22.21.11;	author eb;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2015.01.17.22.19.58;	author eb;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2015.01.17.22.19.36;	author eb;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2015.01.17.22.19.25;	author eb;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2015.01.17.22.15.29;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.17.22.13.38;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.17.22.13.29;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.105
+log
+@vim
+@
+text
+@use 5.20.1;
+use Data::Printer;
+use List::MoreUtils;
+
+# Camel-case test
+sub camelcase {
+
+    my ( $source, $target, $results, $number ) = @@_;
+
+    # Extendible list of exclusions:
+    
+    my $ea = each_arrayref( $source, $target, $number );
+    while ( my ( $source, $target, $number ) = $ea->() ) {
+        my @@source = split( ' ', $source );
+
+        for my $word (@@source) {
+            if ( $source =~ /(\w{3,})/ ) {
+                my $smatch = $1;
+                if ( $target =~ /($smatch)/i ) {
+                    my $tmatch = $1;
+                    if (   ( $smatch !~ /$tmatch/ )
+                        && ( $tmatch !~ /_|\<|\>/ )
+                        && not( $tmatch =~ /^[A-Z]+$/ )
+                        && not( $smatch =~ /^[A-Z]+$/ ) )
+                    {
+                        my ( $smatch_trunc, $tmatch_trunc );
+                        ( $smatch_trunc = $smatch ) =~ s/^.//;
+                        ( $tmatch_trunc = $tmatch ) =~ s/^.//;
+                        if ( $tmatch_trunc !~ $smatch_trunc ) {
+                            say "but the capitalization differs";
+                            say "$smatch and $tmatch\n";
+                            say "$source\n$target";
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+1;
+@
+
+
+1.104
+log
+@vim
+@
+text
+@d6 1
+a6 1
+sub capitalization {
+@
+
+
+1.103
+log
+@vim
+@
+text
+@d11 1
+a11 3
+    my @@exclusions = qw( under tap for list tell data testing april );
+
+    p @@exclusions;
+a22 1
+                        && not( $tmatch ~~ @@exclusions )
+@
+
+
+1.102
+log
+@vim
+@
+text
+@d5 1
+d27 1
+a27 1
+                        && not( $smatch =~ /^[A-Z]+$/ ))
+@
+
+
+1.101
+log
+@vim
+@
+text
+@d25 2
+a26 1
+                        && not( $tmatch =~ /^[A-Z]+$/ ) )
+@
+
+
+1.100
+log
+@vim
+@
+text
+@d18 16
+a33 17
+                if ( $source =~ /(\w{3,})/ ) {
+                    my $smatch = $1;
+                    if ( $target =~ /($smatch)/i ) {
+                        my $tmatch = $1;
+                        if (   ( $smatch !~ /$tmatch/ )
+                            && ( $tmatch !~ /_|\<|\>/ )
+                            && not( $tmatch ~~ @@exclusions )
+                            && not( $tmatch =~/^[A-Z]+$/ ))                       
+{
+                            my ( $smatch_trunc, $tmatch_trunc );
+                            ( $smatch_trunc = $smatch ) =~ s/^.//;
+                            ( $tmatch_trunc = $tmatch ) =~ s/^.//;
+                            if ( $tmatch_trunc !~ $smatch_trunc ) {
+                                say "but the capitalization differs";
+                                say "$smatch and $tmatch\n";
+                                say "$source\n$target";
+                            }
+@
+
+
+1.99
+log
+@vim
+@
+text
+@d24 3
+a26 2
+                            && not( $tmatch ~~ @@exclusions ) )
+                        {
+@
+
+
+1.98
+log
+@vim
+@
+text
+@a17 1
+            if ( $source !~ /[A-ZÆØÅ]{7,}/ ) {
+@
+
+
+1.97
+log
+@vim
+@
+text
+@d18 17
+a34 16
+    if ( $source =! /[A-ZÆØÅ]{7,}/){      
+      if ( $source =~ /(\w{3,})/ ) {
+                my $smatch = $1;
+                if ( $target =~ /($smatch)/i ) {
+                    my $tmatch = $1;
+                    if (   ( $smatch !~ /$tmatch/ )
+                        && ( $tmatch !~ /_|\<|\>/ )
+                        && not( $tmatch ~~ @@exclusions ) )
+                    {
+                        my ( $smatch_trunc, $tmatch_trunc );
+                        ( $smatch_trunc = $smatch ) =~ s/^.//;
+                        ( $tmatch_trunc = $tmatch ) =~ s/^.//;
+                        if ( $tmatch_trunc !~ $smatch_trunc ) {
+                            say "but the capitalization differs";
+                            say "$smatch and $tmatch\n";
+                            say "$source\n$target";
+d37 1
+a37 1
+                }}
+@
+
+
+1.96
+log
+@vim
+@
+text
+@d18 2
+a19 1
+            if ( $source =~ /(\w{3,})/ ) {
+d36 1
+a36 1
+                }
+@
+
+
+1.95
+log
+@vim
+@
+text
+@d26 3
+a28 3
+my ($smatch_trunc, $tmatch_trunc);
+($smatch_trunc = $smatch) =~ s/^.//;
+($tmatch_trunc = $tmatch) =~ s/^.//;
+@
+
+
+1.94
+log
+@vim
+@
+text
+@a28 2
+
+say @@test x 10;
+@
+
+
+1.93
+log
+@vim
+@
+text
+@d26 4
+a29 1
+my @@test = ($tmatch =~ s/^.//);
+d31 1
+a31 1
+                        if ( $tmatch !~ $smatch ) {
+@
+
+
+1.92
+log
+@vim
+@
+text
+@d27 1
+a27 1
+say $test x 10;
+@
+
+
+1.91
+log
+@vim
+@
+text
+@d26 1
+a26 1
+my $test = ($tmatch =~ s/^.//);
+@
+
+
+1.90
+log
+@vim
+@
+text
+@d26 1
+a26 1
+my $test eq $tmatch =~ s/^.//;
+@
+
+
+1.89
+log
+@vim
+@
+text
+@d26 1
+a26 1
+my $test =~ $tmatch =~ s/^.//;
+@
+
+
+1.88
+log
+@vim
+@
+text
+@d26 1
+a26 1
+my $test = $tmatch =~ s/^.//;
+@
+
+
+1.87
+log
+@vim
+@
+text
+@d26 2
+@
+
+
+1.86
+log
+@vim
+@
+text
+@d26 1
+a26 4
+                        my $tmatch_trunc = $tmatch =~ s/^.//;
+say $tmatch_trunc;                        
+my $smatch_trunc = $smatch =~ s/^.//;
+                        if ( $tmatch_trunc !~ $smatch_trunc ) {
+@
+
+
+1.85
+log
+@vim
+@
+text
+@d27 2
+a28 1
+                        my $smatch_trunc = $smatch =~ s/^.//;
+@
+
+
+1.84
+log
+@vim
+@
+text
+@d28 1
+a28 1
+                        if ( $tmatch_trunc ne $smatch_trunc ) {
+@
+
+
+1.83
+log
+@vim
+@
+text
+@d9 1
+a9 1
+# Extendible list of exclusions:
+d19 1
+a19 1
+              my $smatch = $1;
+d21 1
+a21 1
+                   my $tmatch = $1;
+d24 1
+a24 1
+                        && not( $tmatch ~~ @@exclusions) )
+d26 8
+a33 7
+                    $tmatch =~ s/^.//;
+                    $smatch =~ s/^.//;
+                    if($tmatch ne $smatch){
+                        say "but the capitalization differs";
+                        say "$smatch and $tmatch\n";
+                        say "$source\n$target";
+                    }}
+@
+
+
+1.82
+log
+@vim
+@
+text
+@d26 3
+d32 1
+a32 1
+                    }
+@
+
+
+1.81
+log
+@vim
+@
+text
+@a7 2
+    my $word;
+    my $match;
+d17 1
+a17 1
+        for $word (@@source) {
+@
+
+
+1.80
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                $smatch = $1;
+@
+
+
+1.79
+log
+@vim
+@
+text
+@d29 1
+a29 1
+                        say "$match and $tmatch\n";
+@
+
+
+1.78
+log
+@vim
+@
+text
+@d21 4
+a24 6
+                $match = $1;
+                my $tmatch;
+                if ( $target =~ /($match)/i ) {
+                    $tmatch = $1;
+                    chomp $tmatch;
+                    if (   ( $source !~ /$tmatch/ )
+@
+
+
+1.77
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    # Extendible list of exclusions:
+d28 1
+a28 1
+                        && not( $tmatch ~~ @@exclusions ) )
+d30 3
+a32 9
+
+                        $match =~ s/^.//;
+                        $tmatch =~ s/^.//;
+
+                        if ( $match ne $tmatch ) {
+                            say "but the capitalization differs";
+                            say "$match and $tmatch\n";
+                            say "$source\n$target";
+                        }
+@
+
+
+1.76
+log
+@vim
+@
+text
+@d34 4
+a37 6
+                        if (
+                            $match ne $tmatch){
+                                say "but the capitalization differs";
+                                  say "$match and $tmatch\n";
+                                  say "$source\n$target";
+                            }
+d44 2
+a45 1
+    1;
+@
+
+
+1.75
+log
+@vim
+@
+text
+@d11 1
+a11 1
+# Extendible list of exclusions:
+d28 1
+a28 1
+                        && not( $tmatch ~~ @@exclusions) )
+a29 9
+              
+                    $match =~ s/^.//;
+                    $tmatch =~ s/^.//;
+                      
+                    if ($match ne $tmatch {
+                      say "but the capitalization differs";
+                        say "$match and $tmatch\n";
+                        say "$source\n$target";
+                    }
+d31 2
+d34 8
+a41 1
+}
+d46 1
+a46 2
+}
+1;
+@
+
+
+1.74
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    # Extendible list of exclusions:
+d19 1
+a19 1
+        for $word(@@source) {
+d25 1
+d28 1
+a28 1
+                        && not( $tmatch ~~ @@exclusions ) )
+d30 6
+a35 1
+                        say "but the capitalization differs";
+d39 3
+@
+
+
+1.73
+log
+@vim
+@
+text
+@d19 1
+a19 1
+        for $word (@@source) {
+@
+
+
+1.72
+log
+@vim
+@
+text
+@d11 1
+a11 1
+# Extendible list of exclusions:
+a24 1
+                    chomp $tmatch;
+d27 1
+a27 1
+                        && not( $tmatch ~~ @@exclusions) )
+d32 1
+a32 1
+                }
+@
+
+
+1.71
+log
+@vim
+@
+text
+@d33 1
+a33 1
+                    }
+@
+
+
+1.70
+log
+@vim
+@
+text
+@a33 6
+                    $match =~ s/^.//;
+                    $tmatch =~ s/^.//;
+                    if ($match ne $tmatch) {
+                    say "$match and $tmatch\n";
+                    say "$source\n$target";
+}
+@
+
+
+1.69
+log
+@vim
+@
+text
+@d36 1
+a36 1
+                    if $match ne $tmatch {
+@
+
+
+1.68
+log
+@vim
+@
+text
+@d34 6
+@
+
+
+1.67
+log
+@vim
+@
+text
+@d11 3
+a13 1
+    my @@exclusions = qw( under tap for list tell data testing );
+@
+
+
+1.66
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    my @@exclusions = qw( under tap for list tell data );
+@
+
+
+1.65
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    my @@exclusions = qw( under tap for list tell );
+@
+
+
+1.64
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    my @@exclusions = qw( under tap for list );
+@
+
+
+1.63
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    my @@exclusions = qw( under tap for list  );
+@
+
+
+1.62
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    my @@exclusions = qw( under tap for );
+@
+
+
+1.61
+log
+@vim
+@
+text
+@d11 1
+a11 1
+    my @@exclusions = qw( under tap );
+@
+
+
+1.60
+log
+@vim
+@
+text
+@d26 1
+a26 1
+                        && not( @@exclusions ~~ $tmatch ) )
+a31 1
+if ($tmatch ~~ @@exclusions) { say "yup it's there\n\n\n\n";}
+@
+
+
+1.59
+log
+@vim
+@
+text
+@d32 1
+a32 1
+if (@@exclusions ~~ $tmatch) { say "yup it's there\n\n\n\n";}
+@
+
+
+1.58
+log
+@vim
+@
+text
+@d32 1
+@
+
+
+1.57
+log
+@vim
+@
+text
+@d11 1
+a11 2
+    my @@exclusions =
+      qw( under tap );
+d23 2
+a24 2
+ chomp $tmatch;                    
+if (   ( $source !~ /$tmatch/ )
+d26 1
+a26 1
+                        && not ( @@exclusions ~~ $tmatch ) )
+@
+
+
+1.56
+log
+@vim
+@
+text
+@d24 2
+a25 1
+                    if (   ( $source !~ /$tmatch/ )
+@
+
+
+1.55
+log
+@vim
+@
+text
+@d12 1
+a12 1
+      qw( under );
+@
+
+
+1.54
+log
+@vim
+@
+text
+@d36 1
+@
+
+
+1.53
+log
+@vim
+@
+text
+@d26 1
+a26 1
+                        && not ( @@exclusions ~~ $tmatch } ) )
+@
+
+
+1.52
+log
+@vim
+@
+text
+@a35 1
+}
+@
+
+
+1.51
+log
+@vim
+@
+text
+@d26 1
+a26 1
+                        && ( @@exclusions->contains($tmatch) ) )
+@
+
+
+1.50
+log
+@vim
+@
+text
+@d26 1
+a26 1
+                        && ( any(@@exclusions) eq $tmatch ) )
+@
+
+
+1.49
+log
+@vim
+@
+text
+@d4 1
+@
+
+
+1.48
+log
+@vim
+@
+text
+@d3 1
+a3 1
+
+@
+
+
+1.47
+log
+@vim
+@
+text
+@d25 1
+a25 1
+                        && ( @@exclusions !~ $tmatch ) )
+@
+
+
+1.46
+log
+@vim
+@
+text
+@d25 1
+a25 1
+                        && ( @@exclusions !~~ /$tmatch/ ) )
+@
+
+
+1.45
+log
+@vim
+@
+text
+@d25 1
+a25 1
+                        && ( @@exclusions !~ /$tmatch/ ) )
+@
+
+
+1.44
+log
+@vim
+@
+text
+@d11 1
+a11 1
+      qw( \<under\>, \<for\>, \<tap\>, \<list\>, \<april\>, \<testing\> );
+@
+
+
+1.43
+log
+@vim
+@
+text
+@d3 1
+d10 4
+a13 3
+my @@exclusions = qw( \<under\>, \<for\>, \<tab\>, \<list\>, \<april\>, \<testing\> ); 
+p @@exclusions;
+   my $ea = each_arrayref( $source, $target, $number );
+d23 4
+a26 1
+                    if (( $source !~ /$tmatch/ ) && ( $tmatch !~ /_|\<|\>/)&& ( @@exclusions !~ /$tmatch/)){
+@
+
+
+1.42
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if (( $source !~ /$tmatch/ ) && ( $tmatch !~ /_|<|>/)&& ( @@exclusions !~ /$tmatch/)){
+@
+
+
+1.41
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if (( $source !~ /$tmatch/ ) && ( $tmatch !~ /_/)&& ( @@exclusions !~ /$tmatch/)){
+@
+
+
+1.40
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if (( $source !~ /$tmatch/ ) && ( @@exclusions !~ /$tmatch/)){
+@
+
+
+1.39
+log
+@vim
+@
+text
+@d2 1
+a2 1
+
+d10 1
+a10 1
+
+@
+
+
+1.38
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if ( $source !~ /$tmatch/ ) && ( @@exclusions !~ /$tmatch/){
+@
+
+
+1.37
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if ( $source !~ /$1/ ){
+@
+
+
+1.36
+log
+@vim
+@
+text
+@d23 1
+a23 1
+                        say "$match and $tmatch";
+@
+
+
+1.35
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if ( $source !~ /$1/ ) && (@@exclusions !~ /$1/i){
+@
+
+
+1.34
+log
+@vim
+@
+text
+@d21 1
+a21 1
+                    if ( $source !~ /$1/ ) && (@@exclusions !~ /$1/i{
+@
+
+
+1.33
+log
+@vim
+@
+text
+@d24 1
+a24 1
+                        say "
+@
+
+
+1.32
+log
+@vim
+@
+text
+@d9 1
+a9 1
+my @@exclusions = qw( \<under\>, \<for\>, \<tab\>, \<list\>, \<april\>, \<testing\> )  
+@
+
+
+1.31
+log
+@vim
+@
+text
+@d8 4
+a11 1
+    my $ea = each_arrayref( $source, $target, $number );
+d21 1
+a21 1
+                    if ( $source !~ /$1/ ) {
+d24 1
+@
+
+
+1.30
+log
+@vim
+@
+text
+@d13 1
+a13 1
+            if ( $source =~ /(\w+)/ ) {
+a17 1
+                  #  say "it matches insensitively.($match and $tmatch)";
+@
+
+
+1.29
+log
+@vim
+@
+text
+@d20 2
+a21 3
+                        print "but the capitalization differs";
+                        print
+"We found $match, but the capitalization seems wrong.\nSOURCE: $source\nTARGET: $target\n\n.";
+@
+
+
+1.28
+log
+@vim
+@
+text
+@d18 1
+a18 1
+                    say "it matches insensitively.($match and $tmatch)";
+@
+
+
+1.27
+log
+@vim
+@
+text
+@d8 1
+a8 1
+    my $ea = each_arrayref( $source, $target, $number ); 
+d11 1
+a11 1
+   
+d15 3
+a17 3
+                my $tmatch;                
+if ( $target =~ /($match)/i ) {
+                $tmatch = $1;
+@
+
+
+1.26
+log
+@vim
+@
+text
+@d7 2
+a8 3
+    my ( @@source_cap, @@target_cap );
+    my $test;
+    my $ea = each_arrayref( $source, $target, $number );
+a9 1
+        my $match;
+d11 1
+d15 4
+a18 2
+                if ( $target =~ /($match)/i ) {
+                    say "it matches insensitively.($match and $1)";
+@
+
+
+1.25
+log
+@vim
+@
+text
+@d6 1
+a6 1
+my $word;
+d12 9
+a20 9
+     my @@source = split ( ' ', $source);
+for $word(@@source) {
+   if ( $source =~ /(\w+)/ ) {
+            $match = $1;
+            if ( $target =~ /($match)/i ) {
+say "it matches insensitively.($match and $1)";
+                if ( $source !~ /$1/ ) {
+                    print "but the capitalization differs";
+                    print
+d22 1
+d25 1
+a25 1
+        }}
+@
+
+
+1.24
+log
+@vim
+@
+text
+@d6 1
+a6 1
+
+d12 3
+a14 1
+        if ( $source =~ /(\w+)/ ) {
+d16 4
+a19 3
+            if ( $target =~ /$match/i ) {
+                if ( $source !~ /$match/ ) {
+                    print "lol";
+d24 1
+a24 1
+        }
+@
+
+
+1.23
+log
+@vim
+@
+text
+@d15 4
+a18 5
+print "1";
+                if ( $source !~ /$match/) {
+print "lol";                    
+print
+                      "We found $match, but the capitalization seems wrong.\nSOURCE: $source\nTARGET: $target\n\n.";
+@
+
+
+1.22
+log
+@vim
+@
+text
+@d15 1
+a15 1
+print "1\n";
+@
+
+
+1.21
+log
+@vim
+@
+text
+@d17 2
+a18 1
+                    print
+@
+
+
+1.20
+log
+@vim
+@
+text
+@d15 1
+@
+
+
+1.19
+log
+@vim
+@
+text
+@d15 1
+a15 1
+                if ( $source =~ /$match/) {
+@
+
+
+1.18
+log
+@vim
+@
+text
+@d15 1
+a15 1
+                if ( $source ne "$match") {
+@
+
+
+1.17
+log
+@vim
+@
+text
+@d17 1
+a17 1
+                      "We found $match, but the capitalization seems wrong.";
+@
+
+
+1.16
+log
+@vim
+@
+text
+@d15 1
+a15 1
+                if ( $source ne "$match"") {
+@
+
+
+1.15
+log
+@vim
+@
+text
+@d15 1
+a15 1
+                if ( $source ne /$match/ ) {
+@
+
+
+1.14
+log
+@vim
+@
+text
+@d15 1
+a15 1
+                if ( $source != /$match/ ) {
+@
+
+
+1.13
+log
+@vim
+@
+text
+@d11 1
+a11 1
+my $match;
+@
+
+
+1.12
+log
+@vim
+@
+text
+@d11 1
+a11 1
+
+@
+
+
+1.11
+log
+@vim
+@
+text
+@d15 5
+a19 4
+                if (
+                    $source != /$match/) {
+                print "We found $match, but the capitalization seems wrong.";
+            }}
+@
+
+
+1.10
+log
+@vim
+@
+text
+@d16 1
+a16 1
+                    $source != /$match) {
+@
+
+
+1.9
+log
+@vim
+@
+text
+@d15 2
+a16 1
+if ( $source != /$match) {
+a18 1
+
+@
+
+
+1.8
+log
+@vim
+@
+text
+@d14 4
+a17 3
+            if ( $target =~ /$match/ ) {
+                print "We found $match";
+            }
+@
+
+
+1.7
+log
+@vim
+@
+text
+@d8 1
+a8 1
+my $test;
+d13 3
+a15 3
+$test = $1;        
+    if ( $target =~ /$test/ ) {
+                print "We found $test";
+d19 3
+a21 2
+    }}
+    1;
+@
+
+
+1.6
+log
+@vim
+@
+text
+@d8 1
+a8 1
+
+d13 3
+a15 2
+            if ( $target =~ /$1/ ) {
+                print "We found $1";
+@
+
+
+1.5
+log
+@vim
+@
+text
+@d18 1
+a18 1
+    }
+@
+
+
+1.4
+log
+@vim
+@
+text
+@d12 5
+a16 3
+        if ( $source =~ /(\w+)/) {
+if ( $target =~ /$1/ ) {
+            print "We found $1";
+a17 1
+
+d19 1
+a19 2
+}
+1;
+@
+
+
+1.3
+log
+@vim
+@
+text
+@d12 2
+a13 1
+        if ( $source =~ /(\w+)/ && $target =~ /$1/ ) {
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d18 1
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d5 1
+a5 1
+my ($source, $target, $results, $number) = @@_;
+d7 1
+a7 1
+my (@@source_cap, @@target_cap);
+d9 2
+a10 6
+my $ea = each_arrayref( $source, $target, $number);
+while (my ($source, $target, $number) = $ea->()){
+
+if ($source =~ /(\w+)/ && $target =~ /$1/) {
+print "We found $1";
+}
+d12 3
+d16 1
+@

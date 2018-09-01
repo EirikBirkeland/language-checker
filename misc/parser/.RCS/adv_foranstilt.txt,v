@@ -1,0 +1,31 @@
+head	1.1;
+access;
+symbols;
+locks
+	eb:1.1; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.1
+date	2015.01.10.08.32.57;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.1
+log
+@vim
+@
+text
+@raskt
+hurtig
+lett
+enkelt
+smertefritt
+@

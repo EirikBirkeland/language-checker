@@ -1,0 +1,222 @@
+#!/usr/bin/env perl
+use 5.20.1;
+use strict;
+use warnings;
+use Perl::Critic;
+use File::stat;
+use BSD::Resource;
+use Exporter;
+use feature 'say';
+
+die "Dude, your OS is wrong" if $^O !~ /linux/;
+
+#KEEP: Redirect STDERR to log/error.txt
+#use IO::Handle;
+#open ERROR, '>', "../log/error.txt" or die $!;
+#STDERR->fdopen( \*ERROR, '>>' ) or die $!;
+
+#use Readonly;
+our $HTML   = "true";
+our $TIMERS = "true";
+
+# Define HTML wrappers
+my @span_tags =
+  qw(instruction error adv_source adv_target source target wrong suggest type desc);
+
+for my $tag (@span_tags) {
+    no strict 'refs';
+    *$tag = sub {
+        "<span class='$tag'>@_</span>";
+    };
+}
+
+# use Number::Fraction;
+use utf8;
+use XML::LibXML;
+use Data::Printer;
+
+# To ensure all files opened use a particular set of I/O layers:
+use open IO => ":utf8";
+
+# use advanced';
+use lib $ENV{"HOME"} . '/projects/xml_parser/';
+use My::Advanced;
+use My::Simple;
+use My::Length;
+use My::Untrans;
+use My::Comma_imp;
+use My::Equal;
+use My::Missing_brackets;
+use My::Term_incon;
+use My::Camelcase;
+use My::Verify_number_array;
+
+#use My::Consistency;
+use My::Color_freq;
+use My::Stats;
+use My::Color_def;
+use My::Detect_untrans;
+
+# Benchmark output
+use Benchmark qw(:hireswallclock);
+my ( $starttime, $finishtime, $timespent );
+
+# Set output to utf8 for text files (globally?)
+binmode( STDOUT, ":encoding(UTF-8)" );
+binmode( STDERR, ":encoding(UTF-8)" );
+
+# Open and parse XML
+my $parser = XML::LibXML->new();
+my $doc;
+
+# Change RLIMIT_STACK (ulimit -s) according to input file size, to hopefully avoid segmentation faults when scanning huge .xlfs
+my $filesize    = stat("$ARGV[0]")->size;
+my $ulimit_size = $filesize * 3;
+setrlimit( RLIMIT_STACK, $ulimit_size, $ulimit_size );
+
+our $DATA = "$ENV{HOME}/projects/xml_parser/data/";
+
+# Load regexes from data files
+open( UNTRANS, "<:encoding(UTF-8)", "$DATA/untranslatables.txt" )
+  or die("Can't open untranslatables.txt:!\n");
+open( SIMPLE, "<:encoding( UTF- 8 )", "$DATA/simple.txt" )
+  or die("Can't open simple.txt:!\n");
+my @untransLines = <UNTRANS>;
+my @simpleLines  = <SIMPLE>;
+close UNTRANS;
+close SIMPLE;
+
+open( UPPER, "<:encoding(UTF-8)",
+    "$ENV{HOME}/projects/xml_parser/html_template/upper.html" );
+undef $/;
+my $upper_html = <UPPER>;
+close UPPER;
+$/ = "\n";
+say $upper_html;
+
+my %results = ();
+$starttime = Benchmark->new;
+
+my ( $number, $source, $target );
+my ( @number, @source, @target );
+
+foreach $_ ( $ARGV[0] ) {
+
+    $doc = $parser->parse_file($_);
+
+    # Feed into arrays:
+    foreach my $tu ( $doc->findnodes('xliff/file/body/trans-unit') ) {
+
+        # @translate = $tu->findvalue('./@translate');
+        $number = $tu->findvalue('./@id');
+        $source = $tu->findvalue('./source');
+        $target = $tu->findvalue('./target');
+
+        push( @number, $number );
+        push( @source, $source );
+        push( @target, $target );
+    }
+
+    my @sourceLength = map( length, @source );
+    my @targetLength = map( length, @target );
+
+    &flash_warn if $target[0] =~ /^This page.*Opening and ending tag mismatch/;
+
+    sub flash_warn {
+        while (42) {
+            say GREEN ON_BLUE "WARNING!!! " x 49, "\n";
+        }
+    }
+
+=lol
+    run_simple_tests( \@simpleLines, \@target, \%results, \@number );
+    check_string_length( \@source, \@target, \%results, \@number );
+    run_advanced_tests( \@source, \@target, \%results, \@number );
+    comma_imp( \@target, \%results, \@number );
+    find_missing_untranslatables( \@untransLines, \@source, \@target,
+        \%results, \@number );
+    equal_seg( \@source, \@target, \%results, \@number );
+    missing_paren( \@source, \@target, \%results, \@number );
+    term_incon( \@source, \@target, \%results, \@number );
+    camelcase( \@source, \@target, \%results, \@number );
+    verify_number_array( \@number );
+    consistency( \@source, \@target, \%results, \@number );
+=cut
+
+    # HTML should be output to file, not to screen
+
+    # say "<h3>Simple</h3>\n<div>";
+    #run_simple_tests( \@simpleLines, \@target, \%results, \@number );
+    #say "</div>";
+
+    #    say "<h3>String Length</h3>\n<div>";
+    #    check_string_length( \@source, \@target, \%results, \@number );
+    #    say "</div>";
+
+    say "<h3>Advanced</h3>\n<div>";
+    run_advanced_tests( \@source, \@target, \%results, \@number );
+    say "</div>";
+
+=pod
+    say "<h3>Comma After Imperatives</h3>\n<div>";
+    comma_imp( \@target, \%results, \@number );
+    say "</div>";
+
+    say "<h3>Missing Untranslatables</h3>\n<div>";
+    find_missing_untranslatables( \@untransLines, \@source, \@target,
+        \%results, \@number );
+    say "</div>";
+
+    say "<h3>Equal Segments</h3>\n<div>";
+    equal_seg( \@source, \@target, \%results, \@number );
+    say "</div>";
+
+    say "<h3>Missing Parentheses</h3>\n<div>";
+    missing_paren( \@source, \@target, \%results, \@number );
+    say "</div>";
+
+    say "<h3>Terminological Inconsistency</h3>\n<div>";
+    term_incon( \@source, \@target, \%results, \@number );
+    say "</div>";
+
+    say "<h3>CamelCase</h3>\n<div>";
+    camelcase( \@source, \@target, \%results, \@number );
+    say "</div>";
+
+    say "<h3>Verify Number Array</h3>\n<div>";
+    verify_number_array( \@number );
+    say "</div>";
+
+    #    say "<h3>Segment-level Consistency</h3>\n<div>";
+    #    consistency( \@source, \@target, \%results, \@number );
+    #    say "</div>";
+
+    #    color_text( \@source, \@target, \%results, \@number );
+
+    say "<h3>Statistics</h3>\n<div>";
+    stats( \@source, \@target, \%results, \@number, \@sourceLength,
+        \@targetLength );
+    say "</div>";
+
+    say "<h3>Detect Untranslatables</h3>\n<div>";
+    detect_untrans( \@source, \@target, \%results );
+    say "</div";
+=cut
+
+}
+
+open( LOWER, "<:encoding(UTF-8)",
+    "$ENV{HOME}/projects/xml_parser/html_template/lower.html" );
+undef $/;
+my $lower_html = <LOWER>;
+close LOWER;
+$/ = "\n";
+say $lower_html;
+
+print p (%results);
+
+$finishtime = Benchmark->new;
+$timespent = timediff( $finishtime, $starttime );
+print "\n\nDone!\nSpent " . timestr($timespent);
+print "\n\n";
+1;

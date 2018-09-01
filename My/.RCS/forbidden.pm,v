@@ -1,0 +1,74 @@
+head	1.3;
+access;
+symbols;
+locks
+	eb:1.3; strict;
+comment	@# @;
+expand	@o@;
+
+
+1.3
+date	2015.01.25.00.31.48;	author eb;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2015.01.14.08.21.32;	author eb;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2015.01.08.19.46.45;	author eb;	state Exp;
+branches;
+next	;
+
+
+desc
+@vim
+@
+
+
+1.3
+log
+@vim
+@
+text
+@forbidden {
+
+    # How can this be done as fast as possible? perhaps non-regex way.
+
+    if target =~ /(Google Play Music)/ {
+        print "forbidden term found: $1";
+      }
+}
+1;
+@
+
+
+1.2
+log
+@vim
+@
+text
+@d5 2
+a6 2
+    if target =~ /Google Play Music/ {
+        print "forbidden term found";
+@
+
+
+1.1
+log
+@vim
+@
+text
+@d1 1
+a1 2
+forbidden{
+# How can this be done as fast as possible? perhaps non-regex way.
+d3 5
+a7 3
+if target =~ /Google Play/ {
+print "forbidden term found";
+}
+@
