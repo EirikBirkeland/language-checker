@@ -10,17 +10,8 @@ use File::stat;
 use BSD::Resource;
 use XML::Bare;
 
-# TODO: The xml parser doesn't currently handle inline xml like "</ph><xid="2" />" ... best way to handle?
-die "Dude, your OS is wrong" if $^O !~ /linux/;
+die "No filename!" if !$ARGV[0];
 
-#if (!ARGV[0]) {
- # check last updated xlf og mqxliff in folder
-#}
-
-my $file = $ARGV[0];
-die "No filename!" if !$file;
-
-#use Readonly;
 our $HTML   = "true";
 our $TIMERS = "true";
 
@@ -35,11 +26,10 @@ for my $tag (@span_tags) {
     };
 }
 
-# To ensure all files opened use a particular set of I/O layers:
+# To ensure all files are opened use a particular set of I/O layers:
 use open IO => ":utf8";
 
-# use advanced';
-use lib $ENV{"HOME"} . '/projects/xml_parser/';
+use lib "$ENV{HOME}/projects/xml_parser/";
 use My::Advanced;
 use My::Simple;
 use My::Length;
@@ -61,7 +51,7 @@ use My::Detect_untrans;
 use Benchmark qw(:hireswallclock);
 my ( $starttime, $finishtime, $timespent );
 
-# Set output to utf8 for text files (globally?)
+# Set output to utf8 for text files
 binmode( STDOUT, ":encoding(UTF-8)" );
 binmode( STDERR, ":encoding(UTF-8)" );
 
@@ -69,7 +59,7 @@ binmode( STDERR, ":encoding(UTF-8)" );
 my $parser = XML::LibXML->new();
 my $doc;
 
-# Change RLIMIT_STACK (ulimit -s) according to input file size, to hopefully avoid segmentation faults when scanning huge .xlfs
+# Change RLIMIT_STACK (ulimit -s) according to input file size, to avoid segmentation faults when scanning huge .xlfs
 my $filesize    = stat($file)->size;
 my $ulimit_size = $filesize * 3;
 setrlimit( RLIMIT_STACK, $ulimit_size, $ulimit_size );
@@ -86,8 +76,7 @@ my @simpleLines  = <SIMPLE>;
 close UNTRANS;
 close SIMPLE;
 
-open( UPPER, "<:encoding(UTF-8)",
-    "$ENV{HOME}/projects/xml_parser/html_template/upper.html" );
+open( UPPER, "<:encoding(UTF-8)", "$ENV{HOME}/projects/xml_parser/html_template/upper.html")  or die("Can't open upper.html");
 undef $/;
 my $upper_html = <UPPER>;
 close UPPER;
@@ -146,7 +135,7 @@ foreach $_ ( $file ) {
     warn "Running Advanced tests...";
     say "<h3>Advanced</h3>\n<div>";
     run_advanced_tests( \@source, \@target, \%results, \@number );
-      say "</div>";
+    say "</div>";
 
     warn "Running Comma After Imperatives test...";
     say "<h3>Comma After Imperatives</h3>\n<div>";
@@ -177,12 +166,6 @@ foreach $_ ( $file ) {
     say "<h3>Verify Number Array</h3>\n<div>";
     verify_number_array( \@number );
     say "</div>";
-
-    #    say "<h3>Segment-level Consistency</h3>\n<div>";
-    #    consistency( \@source, \@target, \%results, \@number );
-    #    say "</div>";
-
-    #    color_text( \@source, \@target, \%results, \@number );
 
     say "<h3>Statistics</h3>\n<div>";
     stats( \@source, \@target, \%results, \@number, \@sourceLength,
